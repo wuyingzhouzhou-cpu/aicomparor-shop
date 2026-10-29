@@ -1,0 +1,1 @@
+# aicomparor-shop
