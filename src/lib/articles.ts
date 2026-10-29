@@ -12,6 +12,9 @@ import BeginnerBrushes, {
 import BrushWithWeight, {
   frontmatter as brushWithWeight,
 } from "@/content/brushes/a-brush-with-weight.mdx";
+import LayFlatVsZipTray, {
+  frontmatter as layFlatVsZipTray,
+} from "@/content/guides/lay-flat-vs-zip-tray-makeup-bags.mdx";
 import ReadingABoot, {
   frontmatter as readingABoot,
 } from "@/content/guides/reading-a-boot.mdx";
@@ -97,6 +100,12 @@ const registry: Article[] = [
     BeginnerBrushes,
   ),
   entry("guides", "reading-a-boot", readingABoot as ArticleSummary, ReadingABoot),
+  entry(
+    "guides",
+    "lay-flat-vs-zip-tray-makeup-bags",
+    layFlatVsZipTray as ArticleSummary,
+    LayFlatVsZipTray,
+  ),
 ];
 
 function byNewest(a: ArticleSummary, b: ArticleSummary) {
