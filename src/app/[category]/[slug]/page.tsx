@@ -101,9 +101,15 @@ async function ArticleContent({
       <div className="max-w-[var(--article-max)]">
         <ImageFrame
           src={article.heroImage}
+          alt={
+            article.heroImage ===
+            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg"
+              ? "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining."
+              : ""
+          }
           ratio={
             article.heroImage ===
-            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/svg/hero-mat-vs-zip-tray.svg"
+            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg"
               ? "aspect-video sm:aspect-[3/2]"
               : "aspect-[4/5] sm:aspect-[3/2]"
           }

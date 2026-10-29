@@ -2,6 +2,7 @@ import Image from "next/image";
 
 type ImageFrameProps = {
   src: string;
+  alt?: string;
   ratio?: string;
   priority?: boolean;
   sizes?: string;
@@ -9,18 +10,21 @@ type ImageFrameProps = {
 
 export function ImageFrame({
   src,
+  alt = "",
   ratio = "aspect-[4/5]",
   priority = false,
   sizes = "(min-width: 1024px) 540px, 100vw",
 }: ImageFrameProps) {
+  const decorative = alt.length === 0;
+
   return (
     <div
       className={`relative overflow-hidden border border-line bg-accent-soft ${ratio}`}
-      aria-hidden="true"
+      {...(decorative ? { "aria-hidden": true as const } : {})}
     >
       <Image
         src={src}
-        alt=""
+        alt={alt}
         fill
         priority={priority}
         unoptimized
