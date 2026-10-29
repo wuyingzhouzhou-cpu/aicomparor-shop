@@ -1,14 +1,23 @@
 import type { ComponentType } from "react";
 import type { MDXProps } from "mdx/types";
+import ChelseaVsAnkle, {
+  frontmatter as chelseaVsAnkle,
+} from "@/content/boots/chelsea-boots-vs-ankle-boots.mdx";
 import QuietChelsea, {
   frontmatter as quietChelsea,
 } from "@/content/boots/the-quiet-chelsea.mdx";
+import BeginnerBrushes, {
+  frontmatter as beginnerBrushes,
+} from "@/content/brushes/makeup-brushes-beginners-need.mdx";
 import BrushWithWeight, {
   frontmatter as brushWithWeight,
 } from "@/content/brushes/a-brush-with-weight.mdx";
 import ReadingABoot, {
   frontmatter as readingABoot,
 } from "@/content/guides/reading-a-boot.mdx";
+import FreshVsWarm, {
+  frontmatter as freshVsWarm,
+} from "@/content/perfume/fresh-vs-warm-perfumes.mdx";
 import NeroliAtDusk, {
   frontmatter as neroliAtDusk,
 } from "@/content/perfume/neroli-at-dusk.mdx";
@@ -67,8 +76,26 @@ function entry(
 
 const registry: Article[] = [
   entry("boots", "the-quiet-chelsea", quietChelsea as ArticleSummary, QuietChelsea),
+  entry(
+    "boots",
+    "chelsea-boots-vs-ankle-boots",
+    chelseaVsAnkle as ArticleSummary,
+    ChelseaVsAnkle,
+  ),
   entry("perfume", "neroli-at-dusk", neroliAtDusk as ArticleSummary, NeroliAtDusk),
+  entry(
+    "perfume",
+    "fresh-vs-warm-perfumes",
+    freshVsWarm as ArticleSummary,
+    FreshVsWarm,
+  ),
   entry("brushes", "a-brush-with-weight", brushWithWeight as ArticleSummary, BrushWithWeight),
+  entry(
+    "brushes",
+    "makeup-brushes-beginners-need",
+    beginnerBrushes as ArticleSummary,
+    BeginnerBrushes,
+  ),
   entry("guides", "reading-a-boot", readingABoot as ArticleSummary, ReadingABoot),
 ];
 
