@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="title desc">
+  <title id="title">Drawstring mat vs three-sided zip tray — inline</title>
+  <desc id="desc">In-article structure comparison for AiComparor guide</desc>
+  <!-- transparent background intentionally: no full-bleed rect -->
+
+  <!-- LEFT panel -->
+  <g transform="translate(20,24)">
+    <text x="160" y="18" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#1A1A1A">Drawstring mat</text>
+    <text x="160" y="42" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5C5C5C">Opens flat as a soft circle</text>
+    <circle cx="160" cy="200" r="110" fill="#F7F5F2" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="160" cy="200" r="98" fill="none" stroke="#3D2B1F" stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
+    <path d="M55 175 C30 160, 18 140, 28 115" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="28" cy="110" r="5" fill="#3D2B1F"/>
+    <path d="M265 175 C290 160, 302 140, 292 115" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="292" cy="110" r="5" fill="#3D2B1F"/>
+    <!-- items -->
+    <g stroke="#1A1A1A" stroke-width="1.5" fill="none">
+      <rect x="115" y="165" width="9" height="58" rx="2" fill="#EDE8E2"/>
+      <ellipse cx="119.5" cy="156" rx="7" ry="10" fill="#C4B5A5" stroke="#1A1A1A"/>
+      <rect x="140" y="175" width="8" height="48" rx="2" fill="#EDE8E2"/>
+      <ellipse cx="144" cy="167" rx="6" ry="9" fill="#C4B5A5" stroke="#1A1A1A"/>
+      <circle cx="185" cy="210" r="12" fill="#F7F5F2" stroke="#1A1A1A"/>
+      <circle cx="210" cy="230" r="10" fill="#F7F5F2" stroke="#1A1A1A"/>
+    </g>
+    <!-- callouts -->
+    <line x1="50" y1="260" x2="90" y2="290" stroke="#3D2B1F" stroke-width="1"/>
+    <text x="20" y="308" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3D2B1F">Drawcord</text>
+    <line x1="200" y1="140" x2="250" y2="100" stroke="#3D2B1F" stroke-width="1"/>
+    <text x="252" y="96" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3D2B1F">Flat workspace</text>
+    <text x="160" y="360" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5C5C5C">Soft · packable · layover desk</text>
+  </g>
+
+  <!-- vs -->
+  <circle cx="360" cy="220" r="18" fill="#F7F5F2" stroke="#E5E1DB" stroke-width="1"/>
+  <text x="360" y="225" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#3D2B1F">vs</text>
+
+  <!-- RIGHT panel -->
+  <g transform="translate(400,24)">
+    <text x="160" y="18" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#1A1A1A">Three-sided zip tray</text>
+    <text x="160" y="42" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5C5C5C">U-zip opens into a rigid tray</text>
+    <!-- tray -->
+    <path d="M40 110 L280 110 L280 280 L40 280 Z" fill="#F7F5F2" stroke="#1A1A1A" stroke-width="2"/>
+    <path d="M40 110 L55 70 L265 70 L280 110" fill="#EDE8E2" stroke="#1A1A1A" stroke-width="2"/>
+    <!-- three-sided zip -->
+    <path d="M48 118 L48 272 L272 272 L272 118" fill="none" stroke="#3D2B1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="48" cy="118" r="4.5" fill="#3D2B1F"/>
+    <circle cx="272" cy="118" r="4.5" fill="#3D2B1F"/>
+    <line x1="160" y1="125" x2="160" y2="265" stroke="#1A1A1A" stroke-width="1" opacity="0.3"/>
+    <line x1="55" y1="195" x2="265" y2="195" stroke="#1A1A1A" stroke-width="1" opacity="0.3"/>
+    <!-- brushes upright -->
+    <g stroke="#1A1A1A" stroke-width="1.5">
+      <rect x="70" y="140" width="7" height="45" rx="2" fill="#EDE8E2"/>
+      <ellipse cx="73.5" cy="132" rx="6" ry="9" fill="#C4B5A5"/>
+      <rect x="90" y="130" width="7" height="55" rx="2" fill="#EDE8E2"/>
+      <ellipse cx="93.5" cy="122" rx="6" ry="9" fill="#C4B5A5"/>
+      <rect x="110" y="145" width="6" height="40" rx="2" fill="#EDE8E2"/>
+      <ellipse cx="113" cy="137" rx="5" ry="8" fill="#C4B5A5"/>
+    </g>
+    <g fill="#F7F5F2" stroke="#1A1A1A" stroke-width="1.5">
+      <circle cx="200" cy="230" r="14"/>
+      <circle cx="235" cy="235" r="11"/>
+    </g>
+    <line x1="48" y1="200" x2="10" y2="200" stroke="#3D2B1F" stroke-width="1"/>
+    <text x="8" y="204" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3D2B1F">3-side zip</text>
+    <line x1="200" y1="100" x2="230" y2="55" stroke="#3D2B1F" stroke-width="1"/>
+    <text x="232" y="52" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3D2B1F">Tray lid</text>
+    <text x="160" y="360" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5C5C5C">Upright tools · contained spill</text>
+  </g>
+
+</svg>

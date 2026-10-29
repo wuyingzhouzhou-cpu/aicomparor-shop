@@ -101,7 +101,12 @@ async function ArticleContent({
       <div className="max-w-[var(--article-max)]">
         <ImageFrame
           src={article.heroImage}
-          ratio="aspect-[4/5] sm:aspect-[3/2]"
+          ratio={
+            article.heroImage ===
+            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/svg/hero-mat-vs-zip-tray.svg"
+              ? "aspect-video sm:aspect-[3/2]"
+              : "aspect-[4/5] sm:aspect-[3/2]"
+          }
           priority
           sizes="(min-width: 768px) 720px, 100vw"
         />
