@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+/*
+  Design tokens from the batch-1 brief.
+  @theme mirrors these values for Tailwind utilities (bg-paper, text-ink, gap-space-3).
+  Keep the two lists identical.
+*/
+:root {
+  --color-bg: #f7f5f2;
+  --color-surface: #ffffff;
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #5c5c5c;
+  --color-line: #e5e1db;
+  --color-accent: #3d2b1f;
+  --color-accent-soft: #ede8e2;
+  --color-focus: #1a1a1a;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --content-max: 1120px;
+  --article-max: 720px;
+  --radius: 0px;
+  --nav-height: 56px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --nav-height: 64px;
+  }
+}
+
+@theme inline {
+  --color-paper: #f7f5f2;
+  --color-surface: #ffffff;
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #5c5c5c;
+  --color-line: #e5e1db;
+  --color-accent: #3d2b1f;
+  --color-accent-soft: #ede8e2;
+  --color-focus: #1a1a1a;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --spacing-space-1: 8px;
+  --spacing-space-2: 16px;
+  --spacing-space-3: 24px;
+  --spacing-space-4: 32px;
+  --spacing-space-5: 40px;
+  --spacing-space-6: 48px;
+  --spacing-space-8: 64px;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+
+.content-wrap {
+  width: min(100%, var(--content-max));
+  margin-inline: auto;
+  padding-inline: var(--space-2);
+}
+
+@media (min-width: 768px) {
+  .content-wrap {
+    padding-inline: var(--space-3);
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+.article-body {
+  width: 100%;
+  max-width: var(--article-max);
+  color: var(--color-ink);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.article-body > :first-child {
+  margin-top: 0;
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol,
+.article-body blockquote {
+  margin-top: 1.15em;
+}
+
+.article-body h2,
+.article-body h3 {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  scroll-margin-top: calc(var(--nav-height) + 16px);
+}
+
+.article-body h2 {
+  margin-top: 2.1em;
+  font-size: 2rem;
+}
+
+.article-body h3 {
+  margin-top: 1.7em;
+  font-size: 1.45rem;
+}
+
+.article-body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.25rem;
+}
+
+.article-body ul {
+  list-style: disc;
+}
+
+.article-body ol {
+  list-style: decimal;
+}
+
+.article-body li + li {
+  margin-top: 0.4em;
+}
+
+.article-body blockquote {
+  border-left: 1px solid var(--color-accent);
+  padding-left: var(--space-3);
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: 1.45rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.article-body .product-mention {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+#editors-picks,
+#how-we-pick,
+#letter {
+  scroll-margin-top: calc(var(--nav-height) + 16px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
