@@ -6,6 +6,7 @@ import { ArticleCard } from "@/components/article-card";
 import { ButtonSecondary } from "@/components/button";
 import { DisclosureBar } from "@/components/disclosure-bar";
 import { ImageFrame } from "@/components/image-frame";
+import { buildArticleJsonLd, buildArticleMetadata, serializeJsonLd } from "@/lib/article-seo";
 import { getArticle, getArticles, getRelated } from "@/lib/articles";
 import { departments } from "@/lib/departments";
 import { formatReading, formatUpdated } from "@/lib/format";
@@ -30,10 +31,7 @@ export async function generateMetadata({
     return { title: "Not found" };
   }
 
-  return {
-    title: article.title,
-    description: article.description,
-  };
+  return buildArticleMetadata(article);
 }
 
 function ArticleFallback() {
@@ -79,8 +77,24 @@ async function ArticleContent({
   const related = getRelated(article);
   const Content = article.Content;
 
+  const jsonLd = buildArticleJsonLd({
+    title: article.title,
+    description: article.description,
+    category: article.category,
+    slug: article.slug,
+    updated: article.updated,
+    heroImage: article.heroImage,
+    sectionTitle: department.title,
+    faq: article.faq,
+    howToSteps: article.howToSteps,
+  });
+
   return (
     <article className="content-wrap flex flex-col gap-space-5 py-space-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
+      />
       <header className="flex max-w-[var(--article-max)] flex-col gap-space-2">
         <Link
           href={`/${article.category}`}

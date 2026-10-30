@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import type { ComponentType } from "react";
 import type { MDXProps } from "mdx/types";
 import ChelseaVsAnkle, {
@@ -27,6 +29,7 @@ import FreshVsWarm, {
 import NeroliAtDusk, {
   frontmatter as neroliAtDusk,
 } from "@/content/perfume/neroli-at-dusk.mdx";
+import { extractFaq, extractHowToSteps, type FaqEntry, type HowToStep } from "@/lib/article-seo";
 import {
   type ArticleSummary,
   type Category,
@@ -37,6 +40,8 @@ type ArticleContent = ComponentType<MDXProps>;
 
 export type Article = ArticleSummary & {
   Content: ArticleContent;
+  faq: FaqEntry[];
+  howToSteps: HowToStep[];
 };
 
 /**
@@ -67,6 +72,11 @@ function entry(
     throw new Error(`${slug} needs a readingMinutes number.`);
   }
 
+  const source = readFileSync(
+    join(process.cwd(), "src/content", category, `${slug}.mdx`),
+    "utf8",
+  );
+
   return {
     slug,
     title: frontmatter.title,
@@ -76,6 +86,8 @@ function entry(
     readingMinutes: frontmatter.readingMinutes,
     heroImage: frontmatter.heroImage,
     toc: frontmatter.toc,
+    faq: extractFaq(source),
+    howToSteps: extractHowToSteps(source),
     Content,
   };
 }
