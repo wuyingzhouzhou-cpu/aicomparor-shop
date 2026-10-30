@@ -9,6 +9,8 @@ import { ImageFrame } from "@/components/image-frame";
 import { getArticle, getArticles, getRelated } from "@/lib/articles";
 import { departments } from "@/lib/departments";
 import { formatReading, formatUpdated } from "@/lib/format";
+import { JsonLd } from "@/components/json-ld";
+import { articleMetadata, buildArticleJsonLd } from "@/lib/seo";
 import { isCategory } from "@/lib/types";
 
 export function generateStaticParams() {
@@ -30,10 +32,7 @@ export async function generateMetadata({
     return { title: "Not found" };
   }
 
-  return {
-    title: article.title,
-    description: article.description,
-  };
+  return articleMetadata(article);
 }
 
 function ArticleFallback() {
@@ -81,6 +80,7 @@ async function ArticleContent({
 
   return (
     <article className="content-wrap flex flex-col gap-space-5 py-space-8">
+      <JsonLd data={buildArticleJsonLd(article)} />
       <header className="flex max-w-[var(--article-max)] flex-col gap-space-2">
         <Link
           href={`/${article.category}`}

@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aicomparor.shop"),
+  metadataBase: new URL("https://www.aicomparor.shop"),
   title: {
     default: "AiComparor",
     template: "%s · AiComparor",
@@ -33,6 +33,13 @@ export const metadata: Metadata = {
     siteName: "AiComparor",
     locale: "en_US",
     type: "website",
+    url: "https://www.aicomparor.shop",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AiComparor",
+    description:
+      "A magazine of boots, perfume, and brushes. A short edit of what is worth keeping.",
   },
 };
 

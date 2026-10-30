@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { CategoryListing } from "@/components/category-listing";
 import { getSummariesByCategory } from "@/lib/articles";
 import { departments } from "@/lib/departments";
+import { categoryMetadata } from "@/lib/seo";
 import { categories, isCategory } from "@/lib/types";
 
 export function generateStaticParams() {
@@ -21,12 +22,7 @@ export async function generateMetadata({
     return { title: "Not found" };
   }
 
-  const department = departments[category];
-
-  return {
-    title: department.title,
-    description: department.lede,
-  };
+  return categoryMetadata(category);
 }
 
 function ListingFallback() {
