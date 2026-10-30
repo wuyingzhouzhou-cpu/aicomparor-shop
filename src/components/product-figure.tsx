@@ -52,7 +52,7 @@ export function ProductFigure({
             alt={alt}
             fill
             sizes={sizes}
-            className="object-cover"
+            className="object-cover object-center"
             {...(priority ? { preload: true } : { loading: "lazy" as const })}
           />
         </div>
