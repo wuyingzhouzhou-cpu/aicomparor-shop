@@ -126,6 +126,16 @@ const registry: Article[] = [
   ),
 ];
 
+/** Homepage Editors’ picks, in desk order. Other essays stay on their department pages. */
+const editorsPickKeys = [
+  ["boots", "chelsea-boots-vs-ankle-boots"],
+  ["perfume", "fresh-vs-warm-perfumes"],
+  ["brushes", "makeup-brushes-beginners-need"],
+  ["guides", "lay-flat-vs-zip-tray-makeup-bags"],
+  ["guides", "how-to-wash-a-makeup-bag"],
+  ["guides", "makeup-bag-brush-holders-slots-vs-mesh"],
+] as const satisfies ReadonlyArray<readonly [Category, string]>;
+
 function byNewest(a: ArticleSummary, b: ArticleSummary) {
   return b.updated.localeCompare(a.updated);
 }
@@ -136,6 +146,18 @@ export function getArticles() {
 
 export function getSummaries() {
   return getArticles().map(toSummary);
+}
+
+export function getEditorsPicks() {
+  return editorsPickKeys.map(([category, slug]) => {
+    const article = registry.find((item) => item.category === category && item.slug === slug);
+
+    if (!article) {
+      throw new Error(`Editors’ pick ${category}/${slug} is not in the registry.`);
+    }
+
+    return toSummary(article);
+  });
 }
 
 export function getSummariesByCategory(category: Category) {

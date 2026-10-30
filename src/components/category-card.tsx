@@ -12,6 +12,7 @@ export function CategoryCard({ department, index }: { department: Department; in
     >
       <ImageFrame
         src={department.image}
+        alt={department.imageAlt}
         ratio="aspect-[4/5]"
         sizes="(min-width: 1024px) 340px, 100vw"
       />

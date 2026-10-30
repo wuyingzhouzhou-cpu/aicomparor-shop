@@ -10,6 +10,7 @@ import { getArticle, getArticles, getRelated } from "@/lib/articles";
 import { departments } from "@/lib/departments";
 import { formatReading, formatUpdated } from "@/lib/format";
 import { JsonLd } from "@/components/json-ld";
+import { isBrushWeightHero, objectPositionClass } from "@/lib/hero-crop";
 import { articleMetadata, buildArticleJsonLd } from "@/lib/seo";
 import { isCategory } from "@/lib/types";
 
@@ -30,6 +31,13 @@ function heroFrame(src: string) {
     return {
       alt: "Lay-n-Go COSMO drawstring bag opened into a round mat with brushes held in elastic loops, and the cinched pouch behind it.",
       ratio: "aspect-square",
+    };
+  }
+
+  if (isBrushWeightHero(src)) {
+    return {
+      alt: "Close crop of a Hakuhodo finishing brush head, bristles and ferrule, with the size scale out of frame.",
+      ratio: "aspect-[3/2]",
     };
   }
 
@@ -128,6 +136,7 @@ async function ArticleContent({
           ratio={heroFrame(article.heroImage).ratio}
           priority
           sizes="(min-width: 768px) 720px, 100vw"
+          imageClassName={objectPositionClass(article.heroImage)}
         />
       </div>
 

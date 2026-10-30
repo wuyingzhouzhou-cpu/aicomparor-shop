@@ -202,7 +202,7 @@ export function categoryMetadata(category: Category): Metadata {
       description: department.lede,
       siteName: "AiComparor",
       locale: "en_US",
-      images: [{ url: image, alt: department.title }],
+      images: [{ url: image, alt: department.imageAlt }],
     },
     twitter: {
       card: "summary_large_image",

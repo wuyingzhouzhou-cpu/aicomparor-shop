@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArticleCard } from "@/components/article-card";
 import { ButtonPrimary } from "@/components/button";
 import { CategoryCard } from "@/components/category-card";
 import { DisclosureBar } from "@/components/disclosure-bar";
-import { ImageFrame } from "@/components/image-frame";
+import { MethodPlate } from "@/components/method-plate";
 import { NewsletterForm } from "@/components/newsletter-form";
+import { getEditorsPicks } from "@/lib/articles";
 import { homeDepartments } from "@/lib/departments";
-import { getSummaries } from "@/lib/articles";
 
 export const metadata: Metadata = {
   title: {
@@ -35,11 +36,11 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const picks = getSummaries();
+  const picks = getEditorsPicks();
 
   return (
     <div className="content-wrap flex flex-col gap-space-8 py-space-8">
-      <section className="grid items-end gap-space-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(260px,0.85fr)] lg:gap-space-8">
+      <section className="grid items-start gap-space-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(260px,0.85fr)] lg:gap-space-8">
         <div className="flex flex-col items-start gap-space-3">
           <p className="eyebrow">Volume 01</p>
           <h1 className="text-balance font-serif text-5xl leading-[0.98] tracking-[-0.03em] text-ink md:text-6xl lg:text-7xl">
@@ -51,17 +52,7 @@ export default function HomePage() {
           </p>
           <ButtonPrimary href="#editors-picks">Read the editors’ picks</ButtonPrimary>
         </div>
-        <figure>
-          <ImageFrame
-            src="/placeholders/hero.svg"
-            ratio="aspect-[3/2] lg:aspect-[4/5]"
-            priority
-            sizes="(min-width: 1024px) 460px, 100vw"
-          />
-          <figcaption className="mt-space-2 text-[11px] uppercase tracking-[0.16em] text-ink-muted">
-            Opening plate
-          </figcaption>
-        </figure>
+        <MethodPlate />
       </section>
 
       <section aria-labelledby="departments-heading">
@@ -82,7 +73,7 @@ export default function HomePage() {
       </section>
 
       <section id="editors-picks" aria-labelledby="picks-heading">
-        <div className="mb-space-4 flex items-end justify-between gap-space-3">
+        <div className="mb-space-4 flex flex-col items-start gap-space-1 md:flex-row md:items-end md:justify-between md:gap-space-3">
           <div>
             <p className="eyebrow">The desk</p>
             <h2
@@ -92,6 +83,12 @@ export default function HomePage() {
               Editors’ picks
             </h2>
           </div>
+          <Link
+            href="/guides"
+            className="inline-flex min-h-11 items-center text-[12px] font-medium uppercase tracking-[0.16em] text-ink underline decoration-line underline-offset-4 hover:text-accent"
+          >
+            Browse all guides
+          </Link>
         </div>
         <div className="grid gap-space-6 sm:grid-cols-2">
           {picks.map((article) => (
