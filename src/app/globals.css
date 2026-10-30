@@ -225,7 +225,10 @@ body {
   font-weight: 600;
 }
 
-#editors-picks,
+#editors-picks {
+  scroll-margin-top: 5.5rem;
+}
+
 #how-we-pick,
 #letter {
   scroll-margin-top: calc(var(--nav-height) + 16px);

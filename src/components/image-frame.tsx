@@ -6,6 +6,7 @@ type ImageFrameProps = {
   ratio?: string;
   priority?: boolean;
   sizes?: string;
+  imageClassName?: string;
 };
 
 export function ImageFrame({
@@ -14,6 +15,7 @@ export function ImageFrame({
   ratio = "aspect-[4/5]",
   priority = false,
   sizes = "(min-width: 1024px) 540px, 100vw",
+  imageClassName,
 }: ImageFrameProps) {
   const decorative = alt.length === 0;
 
@@ -29,7 +31,7 @@ export function ImageFrame({
         priority={priority}
         unoptimized
         sizes={sizes}
-        className="object-cover"
+        className={["object-cover", imageClassName].filter(Boolean).join(" ")}
       />
     </div>
   );
