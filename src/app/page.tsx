@@ -14,6 +14,24 @@ export const metadata: Metadata = {
   },
   description:
     "AiComparor reads boots, perfume, and brushes slowly. A short edit of what is worth wearing, and wearing again.",
+  alternates: {
+    canonical: "https://www.aicomparor.shop/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://www.aicomparor.shop/",
+    title: "AiComparor — A magazine of boots, perfume, and brushes",
+    description:
+      "AiComparor reads boots, perfume, and brushes slowly. A short edit of what is worth wearing, and wearing again.",
+    siteName: "AiComparor",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AiComparor — A magazine of boots, perfume, and brushes",
+    description:
+      "AiComparor reads boots, perfume, and brushes slowly. A short edit of what is worth wearing, and wearing again.",
+  },
 };
 
 export default function HomePage() {
