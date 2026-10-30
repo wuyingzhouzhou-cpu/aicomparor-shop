@@ -6,6 +6,8 @@ type ImageFrameProps = {
   ratio?: string;
   priority?: boolean;
   sizes?: string;
+  /** Contain keeps a square product plate intact inside a wider card. */
+  fit?: "cover" | "contain";
 };
 
 export function ImageFrame({
@@ -14,6 +16,7 @@ export function ImageFrame({
   ratio = "aspect-[4/5]",
   priority = false,
   sizes = "(min-width: 1024px) 540px, 100vw",
+  fit = "cover",
 }: ImageFrameProps) {
   const decorative = alt.length === 0;
 
@@ -26,10 +29,10 @@ export function ImageFrame({
         src={src}
         alt={alt}
         fill
-        priority={priority}
-        unoptimized
         sizes={sizes}
-        className="object-cover"
+        unoptimized={src.endsWith(".svg")}
+        className={fit === "contain" ? "object-contain" : "object-cover"}
+        {...(priority ? { preload: true } : { loading: "lazy" as const })}
       />
     </div>
   );

@@ -9,7 +9,17 @@ export function ArticleCard({ article }: { article: ArticleSummary }) {
 
   return (
     <article className="group relative flex flex-col">
-      <ImageFrame src={article.heroImage} ratio="aspect-[3/2]" sizes="(min-width: 1024px) 340px, 100vw" />
+      <ImageFrame
+        src={article.heroImage}
+        ratio="aspect-[3/2]"
+        sizes="(min-width: 1024px) 340px, 100vw"
+        fit={
+          article.heroImage ===
+          "/assets/guides/how-to-wash-a-makeup-bag/products/layngo/layngo-cosmo-open-closed.png"
+            ? "contain"
+            : "cover"
+        }
+      />
       <p className="eyebrow mt-space-2">{department.title}</p>
       <h3 className="mt-space-1 font-serif text-[1.7rem] leading-tight tracking-[-0.02em] text-ink group-hover:text-accent">
         <Link href={articlePath(article)} className="after:absolute after:inset-0">

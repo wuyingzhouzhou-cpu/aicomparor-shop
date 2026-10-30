@@ -36,6 +36,35 @@ export async function generateMetadata({
   };
 }
 
+const layFlatHero =
+  "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg";
+const washHero =
+  "/assets/guides/how-to-wash-a-makeup-bag/products/layngo/layngo-cosmo-open-closed.png";
+
+function heroAlt(src: string) {
+  if (src === layFlatHero) {
+    return "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining.";
+  }
+
+  if (src === washHero) {
+    return "Lay-n-Go COSMO drawstring bag closed, above the same bag opened into a round mat of makeup.";
+  }
+
+  return "";
+}
+
+function heroRatio(src: string) {
+  if (src === layFlatHero) {
+    return "aspect-video sm:aspect-[3/2]";
+  }
+
+  if (src === washHero) {
+    return "aspect-square";
+  }
+
+  return "aspect-[4/5] sm:aspect-[3/2]";
+}
+
 function ArticleFallback() {
   return (
     <div className="content-wrap flex flex-col gap-space-4 py-space-8" aria-hidden="true">
@@ -101,18 +130,8 @@ async function ArticleContent({
       <div className="max-w-[var(--article-max)]">
         <ImageFrame
           src={article.heroImage}
-          alt={
-            article.heroImage ===
-            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg"
-              ? "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining."
-              : ""
-          }
-          ratio={
-            article.heroImage ===
-            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg"
-              ? "aspect-video sm:aspect-[3/2]"
-              : "aspect-[4/5] sm:aspect-[3/2]"
-          }
+          alt={heroAlt(article.heroImage)}
+          ratio={heroRatio(article.heroImage)}
           priority
           sizes="(min-width: 768px) 720px, 100vw"
         />
