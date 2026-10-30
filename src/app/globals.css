@@ -174,9 +174,20 @@ body {
   margin-bottom: var(--space-5);
 }
 
-.article-body .structure-figure {
+.article-body .structure-figure,
+.article-body .product-figure,
+.article-body .product-compare {
   margin-top: var(--space-4);
   margin-bottom: var(--space-3);
+}
+
+.article-body .product-compare .product-figure {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article-body .product-figure a {
+  text-decoration: none;
 }
 
 .article-body .table-scroll {
