@@ -10,39 +10,26 @@ import { getArticle, getArticles, getRelated } from "@/lib/articles";
 import { departments } from "@/lib/departments";
 import { formatReading, formatUpdated } from "@/lib/format";
 import { JsonLd } from "@/components/json-ld";
-import { isBrushWeightHero, objectPositionClass } from "@/lib/hero-crop";
 import { articleMetadata, buildArticleJsonLd } from "@/lib/seo";
 import { isCategory } from "@/lib/types";
 
-const layFlatHero =
-  "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg";
-const brushHolderHero =
-  "/assets/guides/brush-holders/hero/hero-layngo-cosmo-open-closed.png";
-
-function heroFrame(src: string) {
-  if (src === layFlatHero) {
-    return {
-      alt: "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining.",
-      ratio: "aspect-video sm:aspect-[3/2]",
-    };
-  }
-
-  if (src === brushHolderHero) {
-    return {
-      alt: "Lay-n-Go COSMO drawstring bag opened into a round mat with brushes held in elastic loops, and the cinched pouch behind it.",
-      ratio: "aspect-square",
-    };
-  }
-
-  if (isBrushWeightHero(src)) {
-    return {
-      alt: "Close crop of a Hakuhodo finishing brush head, bristles and ferrule, with the size scale out of frame.",
-      ratio: "aspect-[3/2]",
-    };
-  }
-
-  return { alt: "", ratio: "aspect-[4/5] sm:aspect-[3/2]" };
-}
+/** Article-top heroes are always 3:2. Alts stay specific when the still is named. */
+const heroAlts: Record<string, string> = {
+  "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg":
+    "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining.",
+  "/assets/brushes/a-brush-with-weight/hero/hero-3x2-hakuhodo-full-no-50.jpg":
+    "Hakuhodo finishing brush at full length: bristle head, ferrule, and handle, with no size scale in frame.",
+  "/assets/boots/chelsea-boots-vs-ankle-boots/hero/hero-3x2-blundstone-1609.jpg":
+    "Blundstone 1609 antique brown Chelsea boots, both boots fully in frame.",
+  "/assets/guides/makeup-bag-brush-holders/hero-3x2-bk-burgundy-standup-pair.jpg":
+    "BK Beauty burgundy standup brush holders, one closed and one open with brushes standing upright.",
+  "/assets/guides/how-to-wash-a-makeup-bag/hero/hero-3x2-kusshi-laundry.jpg":
+    "A washable makeup bag in a laundry scene, the bag fully in frame.",
+  "/assets/perfume/fresh-vs-warm-perfumes/hero/hero-3x2-tomford-black-orchid.jpg":
+    "Tom Ford Black Orchid bottle, the full bottle in frame.",
+  "/assets/brushes/makeup-brushes-beginners-need/hero/hero-3x2-rt-everyday-essentials.jpg":
+    "Real Techniques Everyday Essentials brush set with the complexion sponge, the full kit in frame.",
+};
 
 export function generateStaticParams() {
   return getArticles().map((article) => ({
@@ -132,11 +119,10 @@ async function ArticleContent({
       <div className="max-w-[var(--article-max)]">
         <ImageFrame
           src={article.heroImage}
-          alt={heroFrame(article.heroImage).alt}
-          ratio={heroFrame(article.heroImage).ratio}
+          alt={heroAlts[article.heroImage] ?? ""}
+          ratio="aspect-[3/2]"
           priority
           sizes="(min-width: 768px) 720px, 100vw"
-          imageClassName={objectPositionClass(article.heroImage)}
         />
       </div>
 

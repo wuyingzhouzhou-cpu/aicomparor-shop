@@ -1,21 +1,34 @@
 import Image from "next/image";
 
+/**
+ * Cover frame for a still that is already cropped to the slot.
+ *
+ * `ratio` is required. A silent `aspect-[4/5]` default was cropping
+ * article heroes that belong in a 3:2 frame.
+ *
+ * Main slots:
+ * - `aspect-[3/2]` — ArticleCard and the article-top hero
+ * - `aspect-[4/3]` — method strip (ProductFigure keeps its own 4:3 frame)
+ * - `aspect-[4/5]` — homepage rooms (CategoryCard)
+ *
+ * Fit is `object-cover` with `object-position: center`.
+ */
+export type ImageFrameRatio = "aspect-[3/2]" | "aspect-[4/3]" | "aspect-[4/5]";
+
 type ImageFrameProps = {
   src: string;
   alt?: string;
-  ratio?: string;
+  ratio: ImageFrameRatio;
   priority?: boolean;
   sizes?: string;
-  imageClassName?: string;
 };
 
 export function ImageFrame({
   src,
   alt = "",
-  ratio = "aspect-[4/5]",
+  ratio,
   priority = false,
   sizes = "(min-width: 1024px) 540px, 100vw",
-  imageClassName,
 }: ImageFrameProps) {
   const decorative = alt.length === 0;
 
@@ -28,10 +41,10 @@ export function ImageFrame({
         src={src}
         alt={alt}
         fill
-        priority={priority}
         unoptimized
         sizes={sizes}
-        className={["object-cover", imageClassName].filter(Boolean).join(" ")}
+        className="object-cover object-center"
+        {...(priority ? { preload: true } : {})}
       />
     </div>
   );
