@@ -18,6 +18,9 @@ import HowToWashMakeupBag, {
 import LayFlatVsZipTray, {
   frontmatter as layFlatVsZipTray,
 } from "@/content/guides/lay-flat-vs-zip-tray-makeup-bags.mdx";
+import BrushHoldersSlotsVsMesh, {
+  frontmatter as brushHoldersSlotsVsMesh,
+} from "@/content/guides/makeup-bag-brush-holders-slots-vs-mesh.mdx";
 import ReadingABoot, {
   frontmatter as readingABoot,
 } from "@/content/guides/reading-a-boot.mdx";
@@ -114,6 +117,12 @@ const registry: Article[] = [
     "how-to-wash-a-makeup-bag",
     howToWashMakeupBag as ArticleSummary,
     HowToWashMakeupBag,
+  ),
+  entry(
+    "guides",
+    "makeup-bag-brush-holders-slots-vs-mesh",
+    brushHoldersSlotsVsMesh as ArticleSummary,
+    BrushHoldersSlotsVsMesh,
   ),
 ];
 

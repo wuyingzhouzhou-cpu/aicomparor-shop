@@ -7,6 +7,28 @@ export type FaqItem = { question: string; answer: string };
 
 /** Editorial FAQs mirrored from article FAQ sections (for FAQPage JSON-LD). */
 const articleFaqs: Record<string, FaqItem[]> = {
+  "makeup-bag-brush-holders-slots-vs-mesh": [
+    {
+      question: "What does a makeup bag with a brush holder usually include?",
+      answer:
+        "Usually elastic slots or an elastic holder, mesh and/or a zip compartment, or an optional snap-in, removable, or standup insert. The listing phrase alone does not say which.",
+    },
+    {
+      question: "When do elastic brush slots help versus mesh pockets?",
+      answer:
+        "Elastic gives upright, one-place control on a mat or rim. Mesh gives flexible volume for mixed or changing tools in a tray or zip sleeve. Match the hold to how you grab brushes.",
+    },
+    {
+      question: "Should I buy by the number of brush slots?",
+      answer:
+        "No. Slot count is not a cross-brand score. One type example publishes 8 elastic slots; another an elastic holder with no count; a third double mesh plus an optional snap-in. Compare system type.",
+    },
+    {
+      question: "Do brush holders work the same in lay-flat and zip-tray bags?",
+      answer:
+        "No. Mats often use rim elastic; zip trays more often use an interior zip, mesh, and sometimes a snap-in. The grab path follows the open style.",
+    },
+  ],
   "how-to-wash-a-makeup-bag": [
     {
       question: "Can I put a machine washable makeup bag in the dryer?",
