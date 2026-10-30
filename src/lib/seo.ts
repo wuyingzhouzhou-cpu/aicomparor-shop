@@ -38,7 +38,7 @@ const articleFaqs: Record<string, FaqItem[]> = {
     {
       question: "How do I wash a drawstring / lay-flat bag?",
       answer:
-        "Empty it, pretreat stains, tuck or cinch the cord, use cold or brand-stated 30° on gentle, then hang dry. While damp, open the mat into a full circle so it dries in shape.",
+        "Empty it, pretreat stains, tuck or cinch the cord, use cold or brand-stated 30° on gentle, then hang dry. While damp, open the mat into a full circle so it dries in shape. The wash steps stay gentle either way.",
     },
     {
       question: "Can leather makeup bags go in the washing machine?",
@@ -49,6 +49,11 @@ const articleFaqs: Record<string, FaqItem[]> = {
       question: "Do brush slots need special care?",
       answer:
         "Yes: protect the elastic. Avoid hot water and the dryer. Pretreat makeup on the loops gently; do not stretch wet elastic to open slots.",
+    },
+    {
+      question: "How often should I wash a makeup bag?",
+      answer:
+        "After a spill, before or after a trip, or when the lining looks or smells dingy—not on a fear-based monthly schedule. Heavy cream users may wash more often than powder-only kits.",
     },
   ],
   "lay-flat-vs-zip-tray-makeup-bags": [
@@ -72,6 +77,11 @@ const articleFaqs: Record<string, FaqItem[]> = {
       answer:
         "No. Compare system type (elastic slots vs mesh/organizer). Slot counts are a poor cross-brand score when brands count differently.",
     },
+    {
+      question: "Do I still need a TSA liquids bag?",
+      answer:
+        "Yes. TSA liquids rules still belong in a quart bag; a lay-flat makeup bag does not replace that. Drawstring mats usually compress flatter; zip trays keep their shape but claim more cube space.",
+    },
   ],
   "chelsea-boots-vs-ankle-boots": [
     {
@@ -89,6 +99,11 @@ const articleFaqs: Record<string, FaqItem[]> = {
       answer:
         "They can be easier to put on and adjust, especially for high insteps or thick socks. Comfort still depends on the last, toe shape, and heel height—not the zipper alone.",
     },
+    {
+      question: "Do Chelsea boots work with wide calves?",
+      answer:
+        "Often less well than an adjustable zip or lace ankle boot. Elastic width and shaft height are fixed once you pull on. If the top line bites mid-calf, choose a zip ankle boot or a lower petite shaft.",
+    },
   ],
   "fresh-vs-warm-perfumes": [
     {
@@ -105,6 +120,11 @@ const articleFaqs: Record<string, FaqItem[]> = {
       question: "EDP or EDT for everyday?",
       answer:
         "Either can work. Many people default to EDT for a lighter everyday feel and reach for EDP for a denser impression. Judge the specific scent on your skin.",
+    },
+    {
+      question: "Is clean-girl the same as fresh?",
+      answer:
+        "Overlap is high—musk, citrus, and tea show up in both—but clean-girl is a vibe filter, not a lab category. A clean-girl bottle can still lean warm if the base is soft vanilla or skin musk. Test on skin for 30+ minutes.",
     },
   ],
   "makeup-brushes-beginners-need": [
