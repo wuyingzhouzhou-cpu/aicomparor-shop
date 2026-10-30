@@ -13,6 +13,29 @@ import { JsonLd } from "@/components/json-ld";
 import { articleMetadata, buildArticleJsonLd } from "@/lib/seo";
 import { isCategory } from "@/lib/types";
 
+const layFlatHero =
+  "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg";
+const brushHolderHero =
+  "/assets/guides/brush-holders/hero/hero-layngo-cosmo-open-closed.png";
+
+function heroFrame(src: string) {
+  if (src === layFlatHero) {
+    return {
+      alt: "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining.",
+      ratio: "aspect-video sm:aspect-[3/2]",
+    };
+  }
+
+  if (src === brushHolderHero) {
+    return {
+      alt: "Lay-n-Go COSMO drawstring bag opened into a round mat with brushes held in elastic loops, and the cinched pouch behind it.",
+      ratio: "aspect-square",
+    };
+  }
+
+  return { alt: "", ratio: "aspect-[4/5] sm:aspect-[3/2]" };
+}
+
 export function generateStaticParams() {
   return getArticles().map((article) => ({
     category: article.category,
@@ -101,18 +124,8 @@ async function ArticleContent({
       <div className="max-w-[var(--article-max)]">
         <ImageFrame
           src={article.heroImage}
-          alt={
-            article.heroImage ===
-            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg"
-              ? "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining."
-              : ""
-          }
-          ratio={
-            article.heroImage ===
-            "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg"
-              ? "aspect-video sm:aspect-[3/2]"
-              : "aspect-[4/5] sm:aspect-[3/2]"
-          }
+          alt={heroFrame(article.heroImage).alt}
+          ratio={heroFrame(article.heroImage).ratio}
           priority
           sizes="(min-width: 768px) 720px, 100vw"
         />
