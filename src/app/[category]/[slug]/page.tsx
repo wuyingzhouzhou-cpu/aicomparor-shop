@@ -33,6 +33,8 @@ const heroAlts: Record<string, string> = {
     "Real Techniques Everyday Essentials brush set with the complexion sponge, the full kit in frame.",
   "/assets/articles/best-dior-lip-glow-dupes/hero/hero-3x2-dior-lip-glow-or-glossy-balms.jpg":
     "Dior Addict Lip Glow balm, the case and pink stick fully in frame.",
+  "/assets/articles/best-projector-for-bedroom/hero/hero-3x2-xgimi-mogo-3-pro.jpg":
+    "XGIMI MoGo 3 Pro portable projector on its tilt stand, the full unit in frame.",
 };
 
 export function generateStaticParams() {
