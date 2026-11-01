@@ -60,9 +60,9 @@ export const departmentList: Department[] = [
     description:
       "Restored comparison pieces on glossy balms and the beauty filters a search actually needs.",
     lede: "Comparison pieces kept at their original address. Glossy balms, written as a buying filter.",
-    image: "/placeholders/hero.svg",
-    imageAlt: "Articles",
-    showOnHome: false,
+    image: "/assets/articles/best-dior-lip-glow-dupes/hero/hero-3x2-dior-lip-glow-or-glossy-balms.jpg",
+    imageAlt: "Dior Addict Lip Glow balm, the case and pink stick fully in frame.",
+    showOnHome: true,
   },
 ];
 
