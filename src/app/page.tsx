@@ -62,7 +62,7 @@ export default function HomePage() {
             id="departments-heading"
             className="mt-space-2 font-serif text-4xl tracking-[-0.03em] text-ink md:text-5xl"
           >
-            Three rooms
+            Four rooms
           </h2>
         </div>
         <div className="grid gap-space-6 md:grid-cols-3">
