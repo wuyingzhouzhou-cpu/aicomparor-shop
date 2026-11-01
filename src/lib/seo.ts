@@ -171,6 +171,38 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "A small well-chosen set can be convenient if each piece has a clear role. Singles let you upgrade the hardest-working brush first without paying for fillers.",
     },
   ],
+  "best-dior-lip-glow-dupes": [
+    {
+      question: 'What does "Dior Lip Glow dupe" mean here?',
+      answer:
+        "Finish + sheer tint + a hydration habit you will reapply—not a chemical twin, not a scored best-dupe trophy.",
+    },
+    {
+      question: 'Balm or oil if I searched "dior lip gloss dupe"?',
+      answer:
+        "Lean oil (Dior Lip Glow Oil lane, or drugstore oils like e.l.f. Glow Reviver / NYX Fat Oil). Stick in the tote → balm side (Dior Lip Glow balm, e.l.f. Hydrating Core, LANEIGE Glowy Balm).",
+    },
+    {
+      question: "Cheaper Korean moisturizing alternative with natural color?",
+      answer:
+        "LANEIGE Lip Glowy Balm (~$19 list band): glossy balm, shea + murumuru, sheer tint flavors. Different brand story from Dior's pH-tint claim—same shopping job for many readers.",
+    },
+    {
+      question: "Is Summer Fridays a dupe?",
+      answer:
+        "No—not 1:1. Prestige buttery balm for hydration and soft tint. Useful if that texture is what you liked; wrong tool if you need Dior's glow-oil or pH-tint marketing.",
+    },
+    {
+      question: "Will drugstore oils feel exactly like Dior?",
+      answer:
+        "Unlikely. Similar lane (sheer + shine), not identical slip, scent, or packaging ritual. Buy for the habit you will keep.",
+    },
+    {
+      question: "Wear-hour or transfer scores?",
+      answer:
+        "None. We do not fabricate wear tests. Public claims and your own skin are the only honest sample size.",
+    },
+  ],
 };
 
 export function getArticleFaqs(slug: string): FaqItem[] {

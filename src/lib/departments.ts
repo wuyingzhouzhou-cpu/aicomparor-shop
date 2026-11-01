@@ -53,6 +53,17 @@ export const departmentList: Department[] = [
     imageAlt: "Guides",
     showOnHome: false,
   },
+  {
+    category: "articles",
+    title: "Articles",
+    eyebrow: "Archive",
+    description:
+      "Restored comparison pieces on glossy balms and the beauty filters a search actually needs.",
+    lede: "Comparison pieces kept at their original address. Glossy balms, written as a buying filter.",
+    image: "/placeholders/hero.svg",
+    imageAlt: "Articles",
+    showOnHome: false,
+  },
 ];
 
 export const departments: Record<Category, Department> = {
@@ -60,6 +71,7 @@ export const departments: Record<Category, Department> = {
   perfume: departmentList[1],
   brushes: departmentList[2],
   guides: departmentList[3],
+  articles: departmentList[4],
 };
 
 export const homeDepartments = departmentList.filter((department) => department.showOnHome);
