@@ -27,6 +27,8 @@ const heroAlts: Record<string, string> = {
     "A washable makeup bag in a laundry scene, the bag fully in frame.",
   "/assets/perfume/fresh-vs-warm-perfumes/hero/hero-3x2-tomford-black-orchid.jpg":
     "Tom Ford Black Orchid bottle, the full bottle in frame.",
+  "/assets/perfume/how-to-layer-perfume/hero/hero-3x2-blotters-or-bottles.jpg":
+    "Sol de Janeiro Cheirosa 62 and Cheirosa 68 perfume mists, both bottles fully in frame.",
   "/assets/brushes/makeup-brushes-beginners-need/hero/hero-3x2-rt-everyday-essentials.jpg":
     "Real Techniques Everyday Essentials brush set with the complexion sponge, the full kit in frame.",
 };

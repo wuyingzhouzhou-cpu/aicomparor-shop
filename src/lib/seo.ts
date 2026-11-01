@@ -127,6 +127,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "Overlap is high—musk, citrus, and tea show up in both—but clean-girl is a vibe filter, not a lab category. A clean-girl bottle can still lean warm if the base is soft vanilla or skin musk. Test on skin for 30+ minutes.",
     },
   ],
+  "how-to-layer-perfume": [
+    {
+      question: "How to layer perfume without smelling like too much?",
+      answer:
+        "Two sprays in the morning. Denser notes under a collar or on the back of the neck. Evening scent only where a hug would catch it. Lotion holds more of what you already sprayed.",
+    },
+    {
+      question: "Can I layer two different perfumes?",
+      answer:
+        "Yes—when one stays quieter. Clean musk or soft woods under a brighter citrus or floral lift is the usual shape. Two loud bottles in the same hour rarely flatter anyone.",
+    },
+    {
+      question: "Is fragrance layering the same as day to night perfume?",
+      answer:
+        "Close. Day-to-night perfume is the mood shift; fragrance layering is the method—lotion, sprays, optional mist, evening accent—so you get there without emptying a second bottle.",
+    },
+    {
+      question: "Should I put perfume in my hair?",
+      answer:
+        "Lightly, preferably something labeled hair mist. Regular juice can dry strands. Mist the air once and walk through—or keep everything on skin when the day is humid.",
+    },
+    {
+      question: "Do I need matching lotion from the same brand?",
+      answer:
+        "No. Unscented already helps. Matching lotion is tidy for a coherent stack; the same logo on both tubes is optional.",
+    },
+  ],
   "makeup-brushes-beginners-need": [
     {
       question: "How many brushes do beginners need?",
