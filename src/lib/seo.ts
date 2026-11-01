@@ -203,6 +203,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "None. We do not fabricate wear tests. Public claims and your own skin are the only honest sample size.",
     },
   ],
+  "best-projector-for-bedroom": [
+    {
+      question: "Can a side sleeper project on the ceiling?",
+      answer:
+        "Yes if the stand or lens rotates far enough (Freestyle-class 180° cradles, MoGo-class multi-angle stands, GV31-style rotating lenses). Confirm tilt range on the PDP.",
+    },
+    {
+      question: "ISO lumens vs ANSI lumens—what should I trust?",
+      answer:
+        "Prefer ISO 21118 or ANSI figures the brand publishes. LED lumens marketing numbers are a different, often inflated scale—do not treat them as interchangeable.",
+    },
+    {
+      question: "Do I need a short-throw projector for a tiny bedroom?",
+      answer:
+        "Only if the unit must sit inches from the wall. Most bedroom portables are standard throw (~1.2:1). Measure first; two feet of depth usually means true short-throw / UST, not a can projector.",
+    },
+    {
+      question: "Is casting enough, or do I need Google TV / Tizen?",
+      answer:
+        "Casting works. Licensed Netflix on Google TV or Tizen is fewer bedtime steps. HDMI stick setups still fit if you already live in that ecosystem—budget the stick and remotes.",
+    },
+    {
+      question: "Did AiComparor measure brightness or noise?",
+      answer:
+        "No. Specs, dB claims, battery minutes, and list bands are brand or retailer listings as checked Nov 2026—not lab scores.",
+    },
+  ],
 };
 
 export function getArticleFaqs(slug: string): FaqItem[] {

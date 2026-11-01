@@ -3,6 +3,9 @@ import type { MDXProps } from "mdx/types";
 import BestDiorLipGlowDupes, {
   frontmatter as bestDiorLipGlowDupes,
 } from "@/content/articles/best-dior-lip-glow-dupes.mdx";
+import BestProjectorForBedroom, {
+  frontmatter as bestProjectorForBedroom,
+} from "@/content/articles/best-projector-for-bedroom.mdx";
 import ChelseaVsAnkle, {
   frontmatter as chelseaVsAnkle,
 } from "@/content/boots/chelsea-boots-vs-ankle-boots.mdx";
@@ -95,6 +98,12 @@ const registry: Article[] = [
     "best-dior-lip-glow-dupes",
     bestDiorLipGlowDupes as ArticleSummary,
     BestDiorLipGlowDupes,
+  ),
+  entry(
+    "articles",
+    "best-projector-for-bedroom",
+    bestProjectorForBedroom as ArticleSummary,
+    BestProjectorForBedroom,
   ),
   entry("boots", "the-quiet-chelsea", quietChelsea as ArticleSummary, QuietChelsea),
   entry(
