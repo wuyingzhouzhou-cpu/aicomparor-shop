@@ -1,5 +1,8 @@
 import type { ComponentType } from "react";
 import type { MDXProps } from "mdx/types";
+import BestDiorLipGlowDupes, {
+  frontmatter as bestDiorLipGlowDupes,
+} from "@/content/articles/best-dior-lip-glow-dupes.mdx";
 import ChelseaVsAnkle, {
   frontmatter as chelseaVsAnkle,
 } from "@/content/boots/chelsea-boots-vs-ankle-boots.mdx";
@@ -87,6 +90,12 @@ function entry(
 }
 
 const registry: Article[] = [
+  entry(
+    "articles",
+    "best-dior-lip-glow-dupes",
+    bestDiorLipGlowDupes as ArticleSummary,
+    BestDiorLipGlowDupes,
+  ),
   entry("boots", "the-quiet-chelsea", quietChelsea as ArticleSummary, QuietChelsea),
   entry(
     "boots",
