@@ -27,6 +27,9 @@ import ReadingABoot, {
 import FreshVsWarm, {
   frontmatter as freshVsWarm,
 } from "@/content/perfume/fresh-vs-warm-perfumes.mdx";
+import HowToLayer, {
+  frontmatter as howToLayer,
+} from "@/content/perfume/how-to-layer-perfume.mdx";
 import NeroliAtDusk, {
   frontmatter as neroliAtDusk,
 } from "@/content/perfume/neroli-at-dusk.mdx";
@@ -97,6 +100,12 @@ const registry: Article[] = [
     "fresh-vs-warm-perfumes",
     freshVsWarm as ArticleSummary,
     FreshVsWarm,
+  ),
+  entry(
+    "perfume",
+    "how-to-layer-perfume",
+    howToLayer as ArticleSummary,
+    HowToLayer,
   ),
   entry("brushes", "a-brush-with-weight", brushWithWeight as ArticleSummary, BrushWithWeight),
   entry(
