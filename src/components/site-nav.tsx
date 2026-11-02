@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -40,8 +41,16 @@ export function SiteNav() {
   return (
     <header className="sticky top-0 z-30 border-b border-line bg-paper">
       <div className="content-wrap flex h-14 items-center justify-between gap-space-2 md:h-16">
-        <Link href="/" className="inline-flex min-h-11 items-center font-serif text-2xl tracking-[-0.03em] text-ink">
-          AiComparor
+        <Link href="/" aria-label="AiComparor" className="inline-flex min-h-11 items-center">
+          <Image
+            src="/brand/nav-lockup.png"
+            alt=""
+            width={640}
+            height={96}
+            priority
+            unoptimized
+            className="h-8 w-auto md:h-9"
+          />
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center md:flex">
