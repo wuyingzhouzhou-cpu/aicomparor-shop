@@ -18,6 +18,9 @@ import BeginnerBrushes, {
 import BrushWithWeight, {
   frontmatter as brushWithWeight,
 } from "@/content/brushes/a-brush-with-weight.mdx";
+import TravelMakeupBrushes, {
+  frontmatter as travelMakeupBrushes,
+} from "@/content/brushes/travel-makeup-brushes.mdx";
 import HowToWashMakeupBag, {
   frontmatter as howToWashMakeupBag,
 } from "@/content/guides/how-to-wash-a-makeup-bag.mdx";
@@ -131,6 +134,12 @@ const registry: Article[] = [
     "makeup-brushes-beginners-need",
     beginnerBrushes as ArticleSummary,
     BeginnerBrushes,
+  ),
+  entry(
+    "brushes",
+    "travel-makeup-brushes",
+    travelMakeupBrushes as ArticleSummary,
+    TravelMakeupBrushes,
   ),
   entry("guides", "reading-a-boot", readingABoot as ArticleSummary, ReadingABoot),
   entry(

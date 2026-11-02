@@ -154,6 +154,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "No. Unscented already helps. Matching lotion is tidy for a coherent stack; the same logo on both tubes is optional.",
     },
   ],
+  "travel-makeup-brushes": [
+    {
+      question: "What makes a makeup brush good for travel?",
+      answer:
+        "Protected heads (lid, retractable barrel, or pouch), synthetics you will rinse, and roles you use—not piece count. Soft tips and a sturdy ferrule beat a mirrored case.",
+    },
+    {
+      question: "Retractable brushes or a mini kit?",
+      answer:
+        "Retractable or lidded when crush and debris are the enemy. Mini kit when separate eye and face jobs still matter and you will use the pouch. Dual-ended sits between them.",
+    },
+    {
+      question: "Are synthetic brushes better for travel?",
+      answer:
+        "Usually yes for liquids, creams, and sink rinses. Natural hair can diffuse powder at home; suitcase life favors synthetic cleaning and durability.",
+    },
+    {
+      question: "How many travel brushes do I need?",
+      answer:
+        "Often three to five roles: base, powder/set, cheek, plus eye packer and blender if needed. One multi-use buffer can cover a cream-only weekend.",
+    },
+    {
+      question: "Do I need a pouch if brushes already have lids?",
+      answer:
+        "Lids help; a pouch or cup still stops lost caps and barrels under chargers. Soft dual-ended brushes without lids need a sleeve more than retractables do.",
+    },
+  ],
   "makeup-brushes-beginners-need": [
     {
       question: "How many brushes do beginners need?",
