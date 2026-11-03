@@ -42,6 +42,9 @@ import HowToLayer, {
 import NeroliAtDusk, {
   frontmatter as neroliAtDusk,
 } from "@/content/perfume/neroli-at-dusk.mdx";
+import SolidPerfumeVsRollerball, {
+  frontmatter as solidPerfumeVsRollerball,
+} from "@/content/perfume/solid-perfume-vs-rollerball.mdx";
 import {
   type ArticleSummary,
   type Category,
@@ -127,6 +130,12 @@ const registry: Article[] = [
     "how-to-layer-perfume",
     howToLayer as ArticleSummary,
     HowToLayer,
+  ),
+  entry(
+    "perfume",
+    "solid-perfume-vs-rollerball",
+    solidPerfumeVsRollerball as ArticleSummary,
+    SolidPerfumeVsRollerball,
   ),
   entry("brushes", "a-brush-with-weight", brushWithWeight as ArticleSummary, BrushWithWeight),
   entry(
