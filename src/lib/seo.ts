@@ -154,6 +154,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "No. Unscented already helps. Matching lotion is tidy for a coherent stack; the same logo on both tubes is optional.",
     },
   ],
+  "solid-perfume-vs-rollerball": [
+    {
+      question: "Is solid perfume better than a rollerball for travel?",
+      answer:
+        "Better when leak risk and liquids-bag space are the problem—wax and jelly have nothing to tip. Rollerballs win for precise oil on pulse points. Neither is a longevity trophy.",
+    },
+    {
+      question: "Do solid perfumes go in the TSA liquids bag?",
+      answer:
+        "Most travelers pack wax/balm solids and sticks outside the quart bag because they are not free liquid. Officer discretion can still vary—size and labeling matter. When unsure, pack conservatively.",
+    },
+    {
+      question: "Will a solid or rollerball project like my full bottle?",
+      answer:
+        "Usually no. Both lean skin-close. If you need a soft cloud for hair or fabric, bring a sealed travel spray and accept the liquids-bag trade.",
+    },
+    {
+      question: "Can I reapply solid perfume in public without spraying people?",
+      answer:
+        "Yes—that is half the point. Finger swipe or roll under a sleeve, then wash or wipe hands. Skip spraying a cloud into shared cabin air.",
+    },
+    {
+      question: "Should I bring a travel spray anyway?",
+      answer:
+        "Optional. Useful for fabric or a light mist when the quart bag still has room. Not the leak-proof hero of this comparison.",
+    },
+  ],
   "travel-makeup-brushes": [
     {
       question: "What makes a makeup brush good for travel?",
