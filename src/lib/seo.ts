@@ -56,6 +56,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "After a spill, before or after a trip, or when the lining looks or smells dingy—not on a fear-based monthly schedule. Heavy cream users may wash more often than powder-only kits.",
     },
   ],
+  "hanging-toiletry-bag-vs-vanity-case": [
+    {
+      question: "Is a hanging toiletry bag better than a vanity case for travel?",
+      answer:
+        "Better when counter space is gone and a real hang point exists—especially for tall liquids you want to see. A structured vanity case wins when you have desk space and need walls for palettes. Neither is a universal trophy.",
+    },
+    {
+      question: "Do I need a hook in every hotel for a hanging bag?",
+      answer:
+        "Yes, in practice. No hook means the cascade sits on the floor or the toilet lid. Check door hooks, towel bars, and shower rods before you commit the whole kit to hang-only.",
+    },
+    {
+      question: "Will a structured vanity case crush less in a suitcase?",
+      answer:
+        "Often yes—rigid or semi-rigid walls protect flat makeup better than a soft hang kit stuffed under shoes. It also keeps more packed volume. Measure the empty footprint against your cube.",
+    },
+    {
+      question: "Can I use a hanging bag for makeup palettes?",
+      answer:
+        "You can, but clear hanging tiers favor bottles more than wide palettes. Many travelers hang liquids and keep face makeup in a smaller counter pouch or vanity case.",
+    },
+    {
+      question: "Is this the same as a lay-flat makeup bag?",
+      answer:
+        "No. Lay-flat usually means a drawstring mat or three-sided zip tray that opens on a surface—see the lay-flat vs zip tray guide. Hanging vs vanity is about air vs desk.",
+    },
+  ],
   "lay-flat-vs-zip-tray-makeup-bags": [
     {
       question: "Is a flat lay makeup bag the same as a drawstring bag?",
