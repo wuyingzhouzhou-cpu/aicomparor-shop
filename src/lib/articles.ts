@@ -3,6 +3,9 @@ import type { MDXProps } from "mdx/types";
 import ChelseaVsAnkle, {
   frontmatter as chelseaVsAnkle,
 } from "@/content/boots/chelsea-boots-vs-ankle-boots.mdx";
+import SlimKneeHighVsChelsea, {
+  frontmatter as slimKneeHighVsChelsea,
+} from "@/content/boots/slim-knee-high-vs-chelsea-boots.mdx";
 import QuietChelsea, {
   frontmatter as quietChelsea,
 } from "@/content/boots/the-quiet-chelsea.mdx";
@@ -87,6 +90,12 @@ const registry: Article[] = [
     "chelsea-boots-vs-ankle-boots",
     chelseaVsAnkle as ArticleSummary,
     ChelseaVsAnkle,
+  ),
+  entry(
+    "boots",
+    "slim-knee-high-vs-chelsea-boots",
+    slimKneeHighVsChelsea as ArticleSummary,
+    SlimKneeHighVsChelsea,
   ),
   entry("perfume", "neroli-at-dusk", neroliAtDusk as ArticleSummary, NeroliAtDusk),
   entry(

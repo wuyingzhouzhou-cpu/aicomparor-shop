@@ -68,6 +68,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "They can be easier to put on and adjust, especially for high insteps or thick socks. Comfort still depends on the last, toe shape, and heel height—not the zipper alone.",
     },
   ],
+  "slim-knee-high-vs-chelsea-boots": [
+    {
+      question: "Are slim knee-high boots the same as riding boots?",
+      answer:
+        "Often related, not identical. Riding boots can be wider or more utilitarian through the shaft; slim knee-high in Fall 2026 coverage usually means a closer, structured tube—sometimes with a heel or hardware. Shop the shaft width you can wear, not the trend nickname.",
+    },
+    {
+      question: "Can I wear Chelsea boots with a midi skirt?",
+      answer:
+        "Yes, with intention. A midi over a Chelsea leaves shin visible—some outfits want that break; others look unfinished. If the bare strip bothers you every time, that is a knee-high job, not a failure of the Chelsea.",
+    },
+    {
+      question: "Do slim knee-highs work with jeans?",
+      answer:
+        "They can—especially slim or straight legs tucked or stacked cleanly—but jeans alone rarely justify a tall shaft if you already live in Chelseas. Let dress and midi weeks carry the purchase case.",
+    },
+    {
+      question: "What if I have wide calves?",
+      answer:
+        "Prioritize measurable shaft circumference and zip entry. Many slim knee-highs will fail a wide calf; that is geometry, not a personal flaw. A Chelsea (or a deliberately roomier tall boot outside this slim frame) is the practical everyday answer.",
+    },
+    {
+      question: "Is this the same as Chelsea vs ankle boots?",
+      answer:
+        "No. Chelsea vs ankle boots compares pull-on elastic to zip or lace inside ankle height. This essay compares slim knee-high shaft height to Chelsea ankle height.",
+    },
+  ],
   "fresh-vs-warm-perfumes": [
     {
       question: "Is fresh better for summer?",
