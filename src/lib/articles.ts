@@ -51,6 +51,9 @@ import NeroliAtDusk, {
 import SolidPerfumeVsRollerball, {
   frontmatter as solidPerfumeVsRollerball,
 } from "@/content/perfume/solid-perfume-vs-rollerball.mdx";
+import BodyMistVsEauDeParfum, {
+  frontmatter as bodyMistVsEauDeParfum,
+} from "@/content/perfume/body-mist-vs-eau-de-parfum.mdx";
 import {
   type ArticleSummary,
   type Category,
@@ -148,6 +151,12 @@ const registry: Article[] = [
     "solid-perfume-vs-rollerball",
     solidPerfumeVsRollerball as ArticleSummary,
     SolidPerfumeVsRollerball,
+  ),
+  entry(
+    "perfume",
+    "body-mist-vs-eau-de-parfum",
+    bodyMistVsEauDeParfum as ArticleSummary,
+    BodyMistVsEauDeParfum,
   ),
   entry("brushes", "a-brush-with-weight", brushWithWeight as ArticleSummary, BrushWithWeight),
   entry(
