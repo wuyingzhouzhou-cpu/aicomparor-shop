@@ -31,6 +31,8 @@ const heroAlts: Record<string, string> = {
     "Sol de Janeiro Cheirosa 62 and Cheirosa 68 perfume mists, both bottles fully in frame.",
   "/assets/perfume/solid-perfume-vs-rollerball/hero/hero-3x2-glossier-you-solid.jpg":
     "Glossier You Solid perfume compact, open, with the pink case and solid balm fully in frame.",
+  "/assets/perfume/body-mist-vs-eau-de-parfum/hero/hero-3x2-phlur-vanilla-skin-body-mist.jpg":
+    "PHLUR Vanilla Skin hair and body fragrance mist, the full bottle in frame.",
   "/assets/brushes/makeup-brushes-beginners-need/hero/hero-3x2-rt-everyday-essentials.jpg":
     "Real Techniques Everyday Essentials brush set with the complexion sponge, the full kit in frame.",
   "/assets/articles/best-dior-lip-glow-dupes/hero/hero-3x2-dior-lip-glow-or-glossy-balms.jpg":

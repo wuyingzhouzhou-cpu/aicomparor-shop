@@ -208,6 +208,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "No. Unscented already helps. Matching lotion is tidy for a coherent stack; the same logo on both tubes is optional.",
     },
   ],
+  "body-mist-vs-eau-de-parfum": [
+    {
+      question: "Is body mist just a weaker eau de parfum?",
+      answer:
+        "A body mist is a lighter concentration, built for hair, skin, and a reapply. Eau de parfum is denser and usually aimed at pulse points. Lighter is the job, not a demotion. Denser is not an automatic win for every room.",
+    },
+    {
+      question: "Can I wear a body mist to the office?",
+      answer:
+        "Often yes, when the trail stays soft and you are not fogging a small room. A loud gourmand mist still needs a light hand—two passes, then the hallway, not a coat-level cloud at the desk.",
+    },
+    {
+      question: "Will an eau de parfum carry through dinner without constant top-ups?",
+      answer:
+        "That is the reason people reach for it: a pulse-point statement meant to still read in cooler air and at a table. Skin, dose, and the specific juice still decide. We did not time any bottle.",
+    },
+    {
+      question: "Should I own both, and can I layer them?",
+      answer:
+        "Yes. Treat the mist as the base wardrobe and the eau de parfum as the leave-the-house finish. Layering is allowed—see how to layer perfume—and two loud doses in the same hour still fight.",
+    },
+    {
+      question: "Is this the same decision as solid versus rollerball, or fresh versus warm?",
+      answer:
+        "No. Solid versus rollerball is a travel-format fork: leak, liquids bag, discreet reapply. Fresh versus warm is a note-family filter. This page is concentration: body mist versus eau de parfum.",
+    },
+  ],
   "solid-perfume-vs-rollerball": [
     {
       question: "Is solid perfume better than a rollerball for travel?",
