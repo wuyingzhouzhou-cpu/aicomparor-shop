@@ -1,6 +1,7 @@
 declare module "*.mdx" {
   export const frontmatter: {
     title: string;
+    seoTitle?: string;
     description: string;
     category: string;
     updated: string;

@@ -97,6 +97,7 @@ function entry(
   return {
     slug,
     title: frontmatter.title,
+    seoTitle: frontmatter.seoTitle,
     description: frontmatter.description,
     category,
     updated: frontmatter.updated,

@@ -264,6 +264,11 @@ const articleFaqs: Record<string, FaqItem[]> = {
   ],
   "travel-makeup-brushes": [
     {
+      question: "Which dual-ended brushes are best for travel?",
+      answer:
+        "Dual-ended means fewer handles: one shaft, two jobs. Type examples on this page include Sculpted by Aimee–class complexion brushes (blush or bronzer on one end, a smaller concealer end on the other), Glossier’s Cloud Paint cheek brush–class (silicone with synthetic fibers), and Laura Geller’s To-Go 4-in-1–class (heads that swap on one shaft). They illustrate the form, not a ranked shortlist. Skip the form if both ends get dirty and you will not rinse on the trip.",
+    },
+    {
       question: "What makes a makeup brush good for travel?",
       answer:
         "Protected heads (lid, retractable barrel, or pouch), synthetics you will rinse, and roles you use—not piece count. Soft tips and a sturdy ferrule beat a mirrored case.",
@@ -337,6 +342,11 @@ const articleFaqs: Record<string, FaqItem[]> = {
       answer:
         "None. We do not fabricate wear tests. Public claims and your own skin are the only honest sample size.",
     },
+    {
+      question: "What is a Korean Dior Lip Glow dupe for moisture and natural colour?",
+      answer:
+        "LANEIGE Lip Glowy Balm is the Korean balm for that job: a lightweight glossy balm for sheer natural color and daily moisture. Shea and murumuru are the care story on the label; Berry and Grapefruit are tint-flavor examples. It is not Dior’s pH-tint formula, and this page claims no wear time and no winner. If you want the oil look instead, that lane is e.l.f. Glow Reviver Lip Oil.",
+    },
   ],
   "best-projector-for-bedroom": [
     {
@@ -375,9 +385,10 @@ export function articleMetadata(article: ArticleSummary): Metadata {
   const path = articlePath(article);
   const url = absoluteUrl(path);
   const image = absoluteUrl(article.heroImage);
+  const title = article.seoTitle || article.title;
 
   return {
-    title: article.title,
+    title,
     description: article.description,
     alternates: {
       canonical: url,
@@ -385,7 +396,7 @@ export function articleMetadata(article: ArticleSummary): Metadata {
     openGraph: {
       type: "article",
       url,
-      title: article.title,
+      title,
       description: article.description,
       siteName: "AiComparor",
       locale: "en_US",
@@ -398,7 +409,7 @@ export function articleMetadata(article: ArticleSummary): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
+      title,
       description: article.description,
       images: [image],
     },
