@@ -10,6 +10,8 @@ export type TocItem = {
 export type ArticleSummary = {
   slug: string;
   title: string;
+  /** Document `<title>` when it should differ from the on-page H1 (`title`). */
+  seoTitle?: string;
   description: string;
   category: Category;
   updated: string;
