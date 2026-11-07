@@ -24,6 +24,9 @@ import BrushWithWeight, {
 import TravelMakeupBrushes, {
   frontmatter as travelMakeupBrushes,
 } from "@/content/brushes/travel-makeup-brushes.mdx";
+import ClearCosmeticCaseVsNeoprene, {
+  frontmatter as clearCosmeticCaseVsNeoprene,
+} from "@/content/guides/clear-cosmetic-case-vs-neoprene-toiletry.mdx";
 import HangingToiletryBagVsVanityCase, {
   frontmatter as hangingToiletryBagVsVanityCase,
 } from "@/content/guides/hanging-toiletry-bag-vs-vanity-case.mdx";
@@ -178,6 +181,12 @@ const registry: Article[] = [
     "lay-flat-vs-zip-tray-makeup-bags",
     layFlatVsZipTray as ArticleSummary,
     LayFlatVsZipTray,
+  ),
+  entry(
+    "guides",
+    "clear-cosmetic-case-vs-neoprene-toiletry",
+    clearCosmeticCaseVsNeoprene as ArticleSummary,
+    ClearCosmeticCaseVsNeoprene,
   ),
   entry(
     "guides",
