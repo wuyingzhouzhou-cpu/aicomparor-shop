@@ -56,6 +56,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "After a spill, before or after a trip, or when the lining looks or smells dingy—not on a fear-based monthly schedule. Heavy cream users may wash more often than powder-only kits.",
     },
   ],
+  "clear-cosmetic-case-vs-neoprene-toiletry": [
+    {
+      question: "Is a clear cosmetic case better than a neoprene toiletry bag?",
+      answer:
+        "Better when you need to see and wipe. A neoprene pouch is the better lean when you want cushion and a shape around palettes. Neither is a trophy. The hotel desk can hold either.",
+    },
+    {
+      question: "Can I wipe a clear case and a neoprene bag the same way?",
+      answer:
+        "No. Clear PVC is usually a wipe. Neoprene can stain when a liquid sits, and the care line for the Hunter-class pouch is a hand wash, not a dryer. Read the tag on the bag you actually bought.",
+    },
+    {
+      question: "Will neoprene keep a palette from cracking?",
+      answer:
+        "It is the cushion story—thicker neoprene, a bag that keeps its shape, clothes packed around it. It is not a guarantee. A small soft pouch that shares the name is a weaker pad, and overstuffing works against you.",
+    },
+    {
+      question: "Is this the same choice as a hanging bag versus a vanity case?",
+      answer:
+        "No. Hanging versus vanity is about a door hook versus a counter when the sink ledge disappears. This page assumes both bags can already live on the desk or in a personal item. The question left is visibility versus cushion.",
+    },
+    {
+      question: "Do I still need a TSA liquids bag?",
+      answer:
+        "Yes, when the liquids rules apply. A clear cosmetic case is not automatically your quart bag. See-through helps you find a bottle. It does not rewrite the volume limits.",
+    },
+  ],
   "hanging-toiletry-bag-vs-vanity-case": [
     {
       question: "Is a hanging toiletry bag better than a vanity case for travel?",
