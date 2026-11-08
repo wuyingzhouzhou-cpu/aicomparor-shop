@@ -159,6 +159,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "Often less well than an adjustable zip or lace ankle boot. Elastic width and shaft height are fixed once you pull on. If the top line bites mid-calf, choose a zip ankle boot or a lower petite shaft.",
     },
   ],
+  "waterproof-ankle-vs-chelsea-boots": [
+    {
+      question: "Is a Chelsea boot waterproof?",
+      answer:
+        "Only when that pair is built and sold that way. A leather Chelsea with elastic gores can handle a light drizzle and still wet a sock in a real rain. Water resistant on a spec table, a rubber outsole, or a suede treatment is not seam-sealed waterproof construction. Read the waterproof line for the color you are buying. If it is missing, assume a fashion shaft.",
+    },
+    {
+      question: "Is this the same as Chelsea vs ankle boots?",
+      answer:
+        "No. Chelsea vs ankle boots compares elastic pull-on construction with zip or lace ankle boots—wardrobe and fit, still inside ankle height. This page compares a sealed waterproof ankle with a style-first leather Chelsea. Shaft height, if you need the knee, is slim knee-high vs Chelsea.",
+    },
+    {
+      question: "Do I need both?",
+      answer:
+        "Often, once the jobs split. The leather Chelsea keeps the dry days and the jean break. The waterproof ankle keeps the commute that soaks a sock. If you only walk in light weather, one good leather Chelsea can be the pair you actually wear. Buying both on the same afternoon, before you know which morning fails, is how closets fill with twins.",
+    },
+    {
+      question: "What about waterproof Chelseas?",
+      answer:
+        "They exist, and they are the middle path: a Chelsea silhouette that is sold as waterproof. Sorel Harlow–class and Evie Pull-On–class listings say waterproof leather plus elastic gores and a molded rubber sole. A Hunter rubber Chelsea–class boot is a rain boot that happens to have gores. They are not automatic upgrades of a fashion leather Duchess, and they are not a third rank on this page.",
+    },
+    {
+      question: "Does a grippy sole make the Chelsea the rain boot?",
+      answer:
+        "No. Grip keeps you upright. A seal keeps the sock drier. A studded rubber outsole on a leather Chelsea can be the right sole and still leak at the gore. A lug on a boot that never claims waterproofing is the same split. Buy the sentence that matches the failure you actually have.",
+    },
+  ],
   "slim-knee-high-vs-chelsea-boots": [
     {
       question: "Are slim knee-high boots the same as riding boots?",
