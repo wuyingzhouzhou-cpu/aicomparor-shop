@@ -21,8 +21,8 @@ const heroAlts: Record<string, string> = {
     "Hakuhodo finishing brush at full length: bristle head, ferrule, and handle, with no size scale in frame.",
   "/assets/boots/chelsea-boots-vs-ankle-boots/hero/hero-3x2-blundstone-1609.jpg":
     "Blundstone 1609 antique brown Chelsea boots, both boots fully in frame.",
-  "/assets/boots/waterproof-ankle-vs-chelsea-boots/hero/hero-3x2-sorel-phoenix-zip-quarry.jpg":
-    "Sorel Phoenix Zip quarry grey nubuck ankle boots with a black lug sole, both boots fully in frame.",
+  "/assets/boots/waterproof-ankle-vs-chelsea-boots/hero/hero-3x2-sorel-emelie-iii-zip-black.jpg":
+    "Sorel Emelie III Zip black leather ankle boots with a side zipper and a black lug sole, both boots fully in frame.",
   "/assets/guides/makeup-bag-brush-holders/hero-3x2-bk-burgundy-standup-pair.jpg":
     "BK Beauty burgundy standup brush holders, one closed and one open with brushes standing upright.",
   "/assets/guides/how-to-wash-a-makeup-bag/hero/hero-3x2-kusshi-laundry.jpg":
