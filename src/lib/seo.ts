@@ -316,6 +316,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "Optional. Useful for fabric or a light mist when the quart bag still has room. Not the leak-proof hero of this comparison.",
     },
   ],
+  "cream-blush-vs-powder-blush": [
+    {
+      question: "Is cream blush better than powder?",
+      answer:
+        "No. Cream, liquid, and stick formulas melt, and they are easier to blur. Pressed powder is easier to place and, in the press accounts above, easier to leave alone. Better is the one that matches the skin and the hour.",
+    },
+    {
+      question: "Should I set cream blush with powder?",
+      answer:
+        "Often, if the cream slides. Cream first, a little powder after it has dried, and not so much powder that the flush goes flat. That is the order Allure’s artists and Vogue’s Nars trainer describe. A stain or a jelly is a different formula, and it is not a third column on this page.",
+    },
+    {
+      question: "Is powder blush a bad idea on mature skin?",
+      answer:
+        "Not by itself. Vogue’s August 2026 piece, via Marcilla, prefers cream and liquid on mature skin because a dry powder can emphasize lines, and prefers a light hand if you do set with powder. A luminous or satin powder is a different object from a dry matte. Read the finish in the pan.",
+    },
+    {
+      question: "Is a liquid blush the same as a cream?",
+      answer:
+        "Same side of this fork, not the same texture. A liquid is usually more pigment in a smaller dot. Cream pots and sticks give you a little more time to push the color. Allure’s July 2026 guide treats them as siblings with different working times. A putty that sets semi-matte lands closer to a powder finish than a dewy liquid does.",
+    },
+    {
+      question: "Do I need a brush?",
+      answer:
+        "Not for cream. Fingers are the tool Longo prefers in that Allure piece, because the warmth helps it melt. Powder wants a fluffy brush and less product than you think. If the brush cup is empty, start with the beginner brush roles, not with a 24-piece set. A cream in a suitcase is a different mess: it will color a powder head that shares the pouch.",
+    },
+  ],
   "travel-makeup-brushes": [
     {
       question: "Which dual-ended brushes are best for travel?",

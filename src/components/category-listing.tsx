@@ -20,7 +20,11 @@ function DeskNote({ category }: { category: Category }) {
         <Link href="/brushes/travel-makeup-brushes" className={inlineLink}>
           travel makeup brushes
         </Link>
-        —retractable cheek, dual-ended, or a mini pouch.
+        —retractable cheek, dual-ended, or a mini pouch. The cheek color itself is a different fork:{" "}
+        <Link href="/brushes/cream-blush-vs-powder-blush" className={inlineLink}>
+          cream blush vs powder blush
+        </Link>
+        , a melted flush or a pressed powder that sets.
       </p>
     );
   }
