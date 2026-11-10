@@ -39,6 +39,8 @@ const heroAlts: Record<string, string> = {
     "PHLUR Vanilla Skin hair and body fragrance mist, the full bottle in frame.",
   "/assets/brushes/makeup-brushes-beginners-need/hero/hero-3x2-rt-everyday-essentials.jpg":
     "Real Techniques Everyday Essentials brush set with the complexion sponge, the full kit in frame.",
+  "/assets/brushes/cream-blush-vs-powder-blush/hero/hero-3x2-nars-orgasm-powder.jpg":
+    "NARS Orgasm pressed powder blush, the box and open compact fully in frame.",
   "/assets/articles/best-dior-lip-glow-dupes/hero/hero-3x2-dior-lip-glow-or-glossy-balms.jpg":
     "Dior Addict Lip Glow balm, the case and pink stick fully in frame.",
   "/assets/articles/best-projector-for-bedroom/hero/hero-3x2-xgimi-mogo-3-pro.jpg":

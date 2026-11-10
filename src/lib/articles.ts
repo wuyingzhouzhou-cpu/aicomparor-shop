@@ -27,6 +27,9 @@ import BrushWithWeight, {
 import TravelMakeupBrushes, {
   frontmatter as travelMakeupBrushes,
 } from "@/content/brushes/travel-makeup-brushes.mdx";
+import CreamBlushVsPowder, {
+  frontmatter as creamBlushVsPowder,
+} from "@/content/brushes/cream-blush-vs-powder-blush.mdx";
 import ClearCosmeticCaseVsNeoprene, {
   frontmatter as clearCosmeticCaseVsNeoprene,
 } from "@/content/guides/clear-cosmetic-case-vs-neoprene-toiletry.mdx";
@@ -183,6 +186,12 @@ const registry: Article[] = [
     "travel-makeup-brushes",
     travelMakeupBrushes as ArticleSummary,
     TravelMakeupBrushes,
+  ),
+  entry(
+    "brushes",
+    "cream-blush-vs-powder-blush",
+    creamBlushVsPowder as ArticleSummary,
+    CreamBlushVsPowder,
   ),
   entry("guides", "reading-a-boot", readingABoot as ArticleSummary, ReadingABoot),
   entry(
