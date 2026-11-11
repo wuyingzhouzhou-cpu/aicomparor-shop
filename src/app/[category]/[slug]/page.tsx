@@ -37,6 +37,8 @@ const heroAlts: Record<string, string> = {
     "CALPAK Large Clear Cosmetics Case in stone, clear panels and top handle fully in frame.",
   "/assets/perfume/body-mist-vs-eau-de-parfum/hero/hero-3x2-phlur-vanilla-skin-body-mist.jpg":
     "PHLUR Vanilla Skin hair and body fragrance mist, the full bottle in frame.",
+  "/assets/perfume/skin-scent-vs-modern-vanilla/hero/hero-3x2-phlur-missing-person-edp.jpg":
+    "PHLUR Missing Person Eau de Parfum, pale peach juice and a white cap, the full bottle in frame.",
   "/assets/brushes/makeup-brushes-beginners-need/hero/hero-3x2-rt-everyday-essentials.jpg":
     "Real Techniques Everyday Essentials brush set with the complexion sponge, the full kit in frame.",
   "/assets/brushes/cream-blush-vs-powder-blush/hero/hero-3x2-nars-orgasm-powder.jpg":
