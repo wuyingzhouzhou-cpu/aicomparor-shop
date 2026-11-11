@@ -63,6 +63,9 @@ import SolidPerfumeVsRollerball, {
 import BodyMistVsEauDeParfum, {
   frontmatter as bodyMistVsEauDeParfum,
 } from "@/content/perfume/body-mist-vs-eau-de-parfum.mdx";
+import SkinScentVsModernVanilla, {
+  frontmatter as skinScentVsModernVanilla,
+} from "@/content/perfume/skin-scent-vs-modern-vanilla.mdx";
 import {
   type ArticleSummary,
   type Category,
@@ -173,6 +176,12 @@ const registry: Article[] = [
     "body-mist-vs-eau-de-parfum",
     bodyMistVsEauDeParfum as ArticleSummary,
     BodyMistVsEauDeParfum,
+  ),
+  entry(
+    "perfume",
+    "skin-scent-vs-modern-vanilla",
+    skinScentVsModernVanilla as ArticleSummary,
+    SkinScentVsModernVanilla,
   ),
   entry("brushes", "a-brush-with-weight", brushWithWeight as ArticleSummary, BrushWithWeight),
   entry(

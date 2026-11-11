@@ -289,6 +289,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
         "No. Solid versus rollerball is a travel-format fork: leak, liquids bag, discreet reapply. Fresh versus warm is a note-family filter. This page is concentration: body mist versus eau de parfum.",
     },
   ],
+  "skin-scent-vs-modern-vanilla": [
+    {
+      question: "Is a skin scent just a weaker perfume?",
+      answer:
+        "No. On this page it is a character: closeness, fabric, a musk someone has to approach. Both type examples here are eau de parfum, 50 mL. A lighter mist versus a denser juice is body mist vs eau de parfum.",
+    },
+    {
+      question: "Can a skin scent and a modern vanilla both be warm?",
+      answer:
+        "Yes. Warmth is doing two jobs—intimacy, or a composed vanilla with spice and wood. The family sort, citrus and clean notes against amber and spice, is fresh vs warm perfumes. Both of today’s lanes can sit on the warm side of that older split.",
+    },
+    {
+      question: "Is modern vanilla the same as a bakery gourmand?",
+      answer:
+        "No. Vogue’s 2026 vanilla piece is about architecture: airy, spicy, woody, creamy with a bite, or green. Allure’s 27 October piece treats pink pepper as a way to keep vanilla from tipping into dessert, and it treats bakery gourmands as their own lane—textural warmth, not a brownie. That lane is contrast. It is not a third bottle on this page. Sugar crystals are still on the Vanilla Skin EdP listing. Read them.",
+    },
+    {
+      question: "Can I layer a skin musk under a vanilla?",
+      answer:
+        "You can, if one of them stays quiet. The method—lotion, where you spray, when not to add a second cloud—is how to layer perfume. Two loud vanillas still fight. We did not wear Missing Person under Vanilla Skin and time the result.",
+    },
+    {
+      question: "Is Vanilla Skin Eau de Parfum the same as the Vanilla Skin body mist?",
+      answer:
+        "No. The eau de parfum on this page is 50 mL, ASIN B0DGX5N1RD, glass that says eau de parfum. The hair-and-body mist is a different listing (B0D3FK6KCB), already a type example on body mist vs eau de parfum. Same name. Different job.",
+    },
+  ],
   "solid-perfume-vs-rollerball": [
     {
       question: "Is solid perfume better than a rollerball for travel?",

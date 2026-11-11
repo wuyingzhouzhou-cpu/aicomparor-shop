@@ -29,6 +29,26 @@ function DeskNote({ category }: { category: Category }) {
     );
   }
 
+  if (category === "perfume") {
+    return (
+      <p className="max-w-[var(--article-max)] text-pretty text-lg leading-relaxed text-ink">
+        Winter comfort is splitting into two characters.{" "}
+        <Link href="/perfume/skin-scent-vs-modern-vanilla" className={inlineLink}>
+          Skin scent vs modern vanilla
+        </Link>{" "}
+        is the close musk, or the vanilla with pepper and wood. Mist versus eau de parfum is{" "}
+        <Link href="/perfume/body-mist-vs-eau-de-parfum" className={inlineLink}>
+          a concentration question
+        </Link>
+        . Fresh and warm families, which both of those lanes can sit inside, are{" "}
+        <Link href="/perfume/fresh-vs-warm-perfumes" className={inlineLink}>
+          the broader sort
+        </Link>
+        .
+      </p>
+    );
+  }
+
   if (category === "articles") {
     return (
       <p className="max-w-[var(--article-max)] text-pretty text-lg leading-relaxed text-ink">
