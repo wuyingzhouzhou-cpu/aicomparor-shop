@@ -23,6 +23,8 @@ const heroAlts: Record<string, string> = {
     "Blundstone 1609 antique brown Chelsea boots, both boots fully in frame.",
   "/assets/boots/waterproof-ankle-vs-chelsea-boots/hero/hero-3x2-sorel-emelie-iii-zip-black.jpg":
     "Sorel Emelie III Zip black leather ankle boots with a side zipper and a black lug sole, both boots fully in frame.",
+  "/assets/boots/western-boots-vs-riding-boots/hero/hero-3x2-franco-sarto-meyer-light-brown.jpg":
+    "Franco Sarto Meyer light brown leather knee-high boots, both boots fully in frame.",
   "/assets/guides/makeup-bag-brush-holders/hero-3x2-bk-burgundy-standup-pair.jpg":
     "BK Beauty burgundy standup brush holders, one closed and one open with brushes standing upright.",
   "/assets/guides/how-to-wash-a-makeup-bag/hero/hero-3x2-kusshi-laundry.jpg":
