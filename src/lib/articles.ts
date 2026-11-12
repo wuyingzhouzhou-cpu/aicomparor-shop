@@ -15,6 +15,9 @@ import SlimKneeHighVsChelsea, {
 import WaterproofAnkleVsChelsea, {
   frontmatter as waterproofAnkleVsChelsea,
 } from "@/content/boots/waterproof-ankle-vs-chelsea-boots.mdx";
+import WesternVsRiding, {
+  frontmatter as westernVsRiding,
+} from "@/content/boots/western-boots-vs-riding-boots.mdx";
 import QuietChelsea, {
   frontmatter as quietChelsea,
 } from "@/content/boots/the-quiet-chelsea.mdx";
@@ -151,6 +154,12 @@ const registry: Article[] = [
     "waterproof-ankle-vs-chelsea-boots",
     waterproofAnkleVsChelsea as ArticleSummary,
     WaterproofAnkleVsChelsea,
+  ),
+  entry(
+    "boots",
+    "western-boots-vs-riding-boots",
+    westernVsRiding as ArticleSummary,
+    WesternVsRiding,
   ),
   entry("perfume", "neroli-at-dusk", neroliAtDusk as ArticleSummary, NeroliAtDusk),
   entry(

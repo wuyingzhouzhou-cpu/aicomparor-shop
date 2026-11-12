@@ -190,7 +190,7 @@ const articleFaqs: Record<string, FaqItem[]> = {
     {
       question: "Are slim knee-high boots the same as riding boots?",
       answer:
-        "Often related, not identical. Riding boots can be wider or more utilitarian through the shaft; slim knee-high in Fall 2026 coverage usually means a closer, structured tube—sometimes with a heel or hardware. Shop the shaft width you can wear, not the trend nickname.",
+        "Often related, not identical. Riding boots can be wider or more utilitarian through the shaft; slim knee-high in Fall 2026 coverage usually means a closer, structured tube—sometimes with a heel or hardware. Shop the shaft width you can wear, not the trend nickname. The western-details fork against that riding shaft is western boots vs riding boots.",
     },
     {
       question: "Can I wear Chelsea boots with a midi skirt?",
@@ -211,6 +211,33 @@ const articleFaqs: Record<string, FaqItem[]> = {
       question: "Is this the same as Chelsea vs ankle boots?",
       answer:
         "No. Chelsea vs ankle boots compares pull-on elastic to zip or lace inside ankle height. This essay compares slim knee-high shaft height to Chelsea ankle height.",
+    },
+  ],
+  "western-boots-vs-riding-boots": [
+    {
+      question: "Are riding boots the same as slim knee-highs?",
+      answer:
+        "Often related, not identical. A slim knee-high in this season’s coverage is a closer, structured tube. A riding boot is often wider through the shaft and plainer about it. Slim knee-high vs Chelsea is the height fork. This page is western details against that riding shaft.",
+    },
+    {
+      question: "Can a Western boot work with trousers that are not jeans?",
+      answer:
+        "Yes. That is the point of the refined version. Kliest’s note is a western boot under wool trousers, not a denim costume. Holevas also puts the shape under a maxi. If the only outfit that works is a costume, the boot is doing a different job than this essay.",
+    },
+    {
+      question: "Does a high block make a knee-high a riding boot?",
+      answer:
+        "No. Length is not the category. A riding boot in this fork has an understated shaft and, often, a low or flat heel. A plain knee-high on a high stacked block can be a good boot and still be the wrong object. Read the heel in the photo.",
+    },
+    {
+      question: "Do I need both?",
+      answer:
+        "Often, once the jobs split. The western boot keeps the days when the toe should show. The riding boot keeps the skirt and the blazer. If your week is one of those and not the other, one pair is the honest buy. Buying both on the same afternoon, before you know which morning fails, is how closets fill with twins.",
+    },
+    {
+      question: "Is this the same as slim knee-high vs Chelsea?",
+      answer:
+        "No. Slim knee-high vs Chelsea compares a structured knee-high with an ankle Chelsea. Chelsea vs ankle boots stays inside ankle height. This essay compares a western shaft with a riding shaft.",
     },
   ],
   "fresh-vs-warm-perfumes": [
