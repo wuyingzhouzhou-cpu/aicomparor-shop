@@ -7,6 +7,33 @@ export type FaqItem = { question: string; answer: string };
 
 /** Editorial FAQs mirrored from article FAQ sections (for FAQPage JSON-LD). */
 const articleFaqs: Record<string, FaqItem[]> = {
+  "makeup-bag-purse-vs-tote-pouch": [
+    {
+      question: "Is a makeup bag with a wrist strap a purse?",
+      answer:
+        "For this fork, yes, when you actually carry it that way. The strap or the handle is the purse. The zipper and the makeup inside do not change the category by themselves. The fit question is still whether your things fit the bag in your hand.",
+    },
+    {
+      question: "Can one bag do both jobs?",
+      answer:
+        "Only with a strap you can take off and put back on, and only if you will. The Beauty Bag’s own copy describes that pair of modes: wristlet, or dropped into another bag. A pouch with short side loops does the second mode and not the first. Buying both makes sense when the night and the trip stop sharing a kit.",
+    },
+    {
+      question: "Is a short side loop the same as a wrist strap?",
+      answer:
+        "No. The Hunter still shows short loops at the ends of a wide pouch. They are for lifting it out of a tote. A wristlet is a strap you can close around a hand and walk with. If the photo does not show that strap, do not supply it from the product title.",
+    },
+    {
+      question: "Is this the same choice as clear vs neoprene, or hanging vs a vanity case?",
+      answer:
+        "No. Clear vs neoprene is visibility and cushion, once the bag is already on a desk or in a personal item. Hanging vs vanity is a door hook versus a counter. Lay-flat vs zip tray is how the bag opens on a surface. This page is whether the makeup bag is the bag you carry.",
+    },
+    {
+      question: "Should I buy the Hermès or Chanel case from the Cosmopolitan piece?",
+      answer:
+        "Not from this page. Those names are the press context for the argument. There are no store links for them, and a Marc Jacobs wristlet is not a substitute for a Bride-a-Brac. If the point was a strap you can walk with, use the hardware check on this page.",
+    },
+  ],
   "makeup-bag-brush-holders-slots-vs-mesh": [
     {
       question: "What does a makeup bag with a brush holder usually include?",
