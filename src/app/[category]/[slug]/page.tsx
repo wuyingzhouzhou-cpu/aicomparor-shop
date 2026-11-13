@@ -37,6 +37,8 @@ const heroAlts: Record<string, string> = {
     "Glossier You Solid perfume compact, open, with the pink case and solid balm fully in frame.",
   "/assets/guides/clear-cosmetic-case-vs-neoprene-toiletry/hero/hero-3x2-calpak-large-clear-stone.jpg":
     "CALPAK Large Clear Cosmetics Case in stone, clear panels and top handle fully in frame.",
+  "/assets/guides/makeup-bag-purse-vs-tote-pouch/hero/hero-3x2-marc-jacobs-beauty-bag-cement.jpg":
+    "Marc Jacobs The Beauty Bag in cement pebble leather, with a top zip and a leather wristlet strap.",
   "/assets/perfume/body-mist-vs-eau-de-parfum/hero/hero-3x2-phlur-vanilla-skin-body-mist.jpg":
     "PHLUR Vanilla Skin hair and body fragrance mist, the full bottle in frame.",
   "/assets/perfume/skin-scent-vs-modern-vanilla/hero/hero-3x2-phlur-missing-person-edp.jpg":

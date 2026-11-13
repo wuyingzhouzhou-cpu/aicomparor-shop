@@ -48,6 +48,9 @@ import LayFlatVsZipTray, {
 import BrushHoldersSlotsVsMesh, {
   frontmatter as brushHoldersSlotsVsMesh,
 } from "@/content/guides/makeup-bag-brush-holders-slots-vs-mesh.mdx";
+import MakeupBagPurseVsTotePouch, {
+  frontmatter as makeupBagPurseVsTotePouch,
+} from "@/content/guides/makeup-bag-purse-vs-tote-pouch.mdx";
 import ReadingABoot, {
   frontmatter as readingABoot,
 } from "@/content/guides/reading-a-boot.mdx";
@@ -241,6 +244,12 @@ const registry: Article[] = [
     "makeup-bag-brush-holders-slots-vs-mesh",
     brushHoldersSlotsVsMesh as ArticleSummary,
     BrushHoldersSlotsVsMesh,
+  ),
+  entry(
+    "guides",
+    "makeup-bag-purse-vs-tote-pouch",
+    makeupBagPurseVsTotePouch as ArticleSummary,
+    MakeupBagPurseVsTotePouch,
   ),
 ];
 
