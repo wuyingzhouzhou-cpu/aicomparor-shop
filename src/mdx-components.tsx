@@ -11,7 +11,7 @@ function MdxAnchor({ href, children, ...rest }: ComponentPropsWithoutRef<"a">) {
 
   if (/^https?:\/\//.test(url)) {
     return (
-      <a href={url} target="_blank" rel="sponsored noopener noreferrer" {...rest}>
+      <a href={url} target="_blank" rel="noopener noreferrer" {...rest}>
         {children}
       </a>
     );
