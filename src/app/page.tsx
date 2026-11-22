@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleCard } from "@/components/article-card";
-import { ButtonPrimary } from "@/components/button";
+import Image from "next/image";
+import { connection } from "next/server";
+import { Suspense } from "react";
+import comments from "@/data/home-comments.json";
+import { publishedProducts } from "@/lib/published-products";
+import { DailyProductCarousel } from "@/components/daily-product-carousel";
 import { CategoryCard } from "@/components/category-card";
 import { DisclosureBar } from "@/components/disclosure-bar";
-import { MethodPlate } from "@/components/method-plate";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { getEditorsPicks } from "@/lib/articles";
 import { homeDepartments } from "@/lib/departments";
@@ -35,25 +39,48 @@ export const metadata: Metadata = {
   },
 };
 
+const editorialPhotos: Record<string, [string, string]> = {
+  "amazon-us-b000b63o0q": ["4711 Original Eau de Cologne", "/assets/perfume/neroli-at-dusk/hero/4711-original-edc-splash.jpg"],
+  "amazon-us-b08zxy1b7h": ["Mugler Alien Eau de Parfum", "/assets/perfume/jasmine-perfume-bright-vs-rich/hero.webp"],
+  "amazon-us-b0chsdjd5w": ["TOCCA Mini Discovery Set", "/assets/perfume/perfume-discovery-sets-spray-vs-dabber/hero.webp"],
+};
+
+async function DailyFeature() {
+  const slides = publishedProducts.flatMap(product => {
+    const editorial = editorialPhotos[product.slug];
+    const image = product.image || editorial?.[1];
+    return image ? [{ slug: product.slug, title: editorial?.[0] ?? product.title, image, merchant: product.merchant }] : [];
+  }).sort((a, b) => a.slug.localeCompare(b.slug));
+  if (!slides.length) return null;
+  await connection();
+  return <DailyProductCarousel slides={slides} initialTime={new Date().getTime()} />;
+}
+
 export default function HomePage() {
   const picks = getEditorsPicks();
 
   return (
     <div className="content-wrap flex flex-col gap-space-8 py-space-8">
-      <section className="grid items-start gap-space-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(260px,0.85fr)] lg:gap-space-8">
-        <div className="flex flex-col items-start gap-space-3">
-          <p className="eyebrow">Volume 01</p>
-          <h1 className="text-balance font-serif text-5xl leading-[0.98] tracking-[-0.03em] text-ink md:text-6xl lg:text-7xl">
-            What is worth wearing, and wearing again.
+      <div className="grid items-start gap-space-4 lg:grid-cols-[1.05fr_1fr] lg:gap-space-6">
+        <section aria-labelledby="readers-heading">
+          <p className="eyebrow">From Reddit</p>
+          <h1 id="readers-heading" className="my-3 font-serif text-4xl leading-none tracking-tight md:text-5xl">
+            What readers are asking
           </h1>
-          <p className="max-w-[42rem] text-pretty text-lg leading-relaxed text-ink-muted">
-            AiComparor is a small magazine of boots, perfume, and brushes. We live with a thing
-            before we give it a paragraph. The list stays short on purpose.
-          </p>
-          <ButtonPrimary href="#editors-picks">Read the editors’ picks</ButtonPrimary>
-        </div>
-        <MethodPlate />
-      </section>
+          <div className="mt-5 grid gap-3">
+            {comments.map(comment => (
+              <a key={comment.slug} href={comment.url} className="block transition-shadow hover:shadow-md">
+                <Image src={`/assets/home/comments/${comment.slug}.png`} width={960} height={comment.height}
+                  alt={`${comment.topic} — u/${comment.author} on r/Perfumes: “${comment.text}” Read the Reddit discussion.`}
+                  className="h-auto w-full" sizes="(min-width:1024px) 520px, 100vw" />
+              </a>
+            ))}
+          </div>
+        </section>
+        <Suspense fallback={<div aria-label="Loading daily picks" className="aspect-square border border-line bg-surface" />}>
+          <DailyFeature />
+        </Suspense>
+      </div>
 
       <section aria-labelledby="departments-heading">
         <div className="mb-space-4 max-w-[var(--article-max)]">
