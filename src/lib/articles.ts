@@ -6,6 +6,9 @@ import BestDiorLipGlowDupes, {
 import BestProjectorForBedroom, {
   frontmatter as bestProjectorForBedroom,
 } from "@/content/articles/best-projector-for-bedroom.mdx";
+import DiorLipGlowButterVsBalm, {
+  frontmatter as diorLipGlowButterVsBalm,
+} from "@/content/articles/dior-lip-glow-butter-vs-balm.mdx";
 import ChelseaVsAnkle, {
   frontmatter as chelseaVsAnkle,
 } from "@/content/boots/chelsea-boots-vs-ankle-boots.mdx";
@@ -72,6 +75,12 @@ import BodyMistVsEauDeParfum, {
 import SkinScentVsModernVanilla, {
   frontmatter as skinScentVsModernVanilla,
 } from "@/content/perfume/skin-scent-vs-modern-vanilla.mdx";
+import PerfumeThatSmellsLikeLemonJuice, {
+  frontmatter as perfumeThatSmellsLikeLemonJuice,
+} from "@/content/perfume/perfume-that-smells-like-lemon-juice.mdx";
+import PerfumesThatSmellLikeWhiteBarSoap, {
+  frontmatter as perfumesThatSmellLikeWhiteBarSoap,
+} from "@/content/perfume/perfumes-that-smell-like-white-bar-soap.mdx";
 import {
   type ArticleSummary,
   type Category,
@@ -129,6 +138,12 @@ function entry(
 const registry: Article[] = [
   entry(
     "articles",
+    "dior-lip-glow-butter-vs-balm",
+    diorLipGlowButterVsBalm as ArticleSummary,
+    DiorLipGlowButterVsBalm,
+  ),
+  entry(
+    "articles",
     "best-dior-lip-glow-dupes",
     bestDiorLipGlowDupes as ArticleSummary,
     BestDiorLipGlowDupes,
@@ -165,6 +180,18 @@ const registry: Article[] = [
     WesternVsRiding,
   ),
   entry("perfume", "neroli-at-dusk", neroliAtDusk as ArticleSummary, NeroliAtDusk),
+  entry(
+    "perfume",
+    "perfume-that-smells-like-lemon-juice",
+    perfumeThatSmellsLikeLemonJuice as ArticleSummary,
+    PerfumeThatSmellsLikeLemonJuice,
+  ),
+  entry(
+    "perfume",
+    "perfumes-that-smell-like-white-bar-soap",
+    perfumesThatSmellLikeWhiteBarSoap as ArticleSummary,
+    PerfumesThatSmellLikeWhiteBarSoap,
+  ),
   entry(
     "perfume",
     "fresh-vs-warm-perfumes",
