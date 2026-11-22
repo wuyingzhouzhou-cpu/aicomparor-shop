@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b0chsdjd5w",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B0CHSDJD5W",
+    "merchant": "Amazon US",
+    "title": "Tocca Women's Perfume Mini Discovery Sampler Set of 8, 1.5ml Each",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B0CHSDJD5W",
+    "affiliateUrl": null,
+    "image": "https://m.media-amazon.com/images/I/71OU6FG68dL._SL1500_.jpg",
+    "checkedAt": "2026-11-22T06:25:17.291Z",
+    "publishedAt": "2026-11-22T06:25:27.936Z"
+  },
+  {
     "slug": "amazon-us-b0dzkbyw3q",
     "currency": "USD",
     "platform": "amazon-us",
@@ -73,21 +88,6 @@
     "image": "https://m.media-amazon.com/images/I/61ObEnCKPKL._SL1500_.jpg",
     "checkedAt": "2026-11-22T06:21:42.034Z",
     "publishedAt": "2026-11-22T06:21:59.235Z"
-  },
-  {
-    "slug": "amazon-us-b0chsdjd5w",
-    "currency": "USD",
-    "platform": "amazon-us",
-    "productId": "B0CHSDJD5W",
-    "merchant": "Amazon US",
-    "title": "Tocca Women's Perfume Mini Discovery Sampler Set of 8, 1.5ml Each",
-    "price": null,
-    "note": "",
-    "productUrl": "https://www.amazon.com/dp/B0CHSDJD5W",
-    "affiliateUrl": null,
-    "image": null,
-    "checkedAt": "2026-11-22T06:06:28.263Z",
-    "publishedAt": "2026-11-22T06:09:31.343Z"
   },
   {
     "slug": "amazon-us-b08zxy1b7h",
