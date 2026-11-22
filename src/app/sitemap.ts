@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getArticles } from "@/lib/articles";
+import { productPath, publishedProducts } from "@/lib/published-products";
 import { articlePath } from "@/lib/types";
 
 const baseUrl = "https://www.aicomparor.shop";
@@ -10,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/boots`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/perfume`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/brushes`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/products`, changeFrequency: "weekly" },
     { url: `${baseUrl}/guides`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/about`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/compare`, changeFrequency: "monthly", priority: 0.5 },
@@ -25,5 +27,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...pages, ...articles];
+  const products: MetadataRoute.Sitemap = publishedProducts.map((product) => ({
+    url: `${baseUrl}${productPath(product.slug)}`,
+    lastModified: product.publishedAt,
+  }));
+
+  return [...pages, ...articles, ...products];
 }
