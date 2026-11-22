@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b0dzkbyw3q",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B0DZKBYW3Q",
+    "merchant": "Amazon US",
+    "title": "Dior Homme Parfum Spray for Men, 2.5 Ounce",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B0DZKBYW3Q",
+    "affiliateUrl": null,
+    "image": "https://m.media-amazon.com/images/I/51aBJGVx31L._SL1500_.jpg",
+    "checkedAt": "2026-11-22T06:24:56.837Z",
+    "publishedAt": "2026-11-22T06:25:06.234Z"
+  },
+  {
     "slug": "amazon-us-b07x5d6dh4",
     "currency": "USD",
     "platform": "amazon-us",
@@ -58,21 +73,6 @@
     "image": "https://m.media-amazon.com/images/I/61ObEnCKPKL._SL1500_.jpg",
     "checkedAt": "2026-11-22T06:21:42.034Z",
     "publishedAt": "2026-11-22T06:21:59.235Z"
-  },
-  {
-    "slug": "amazon-us-b0dzkbyw3q",
-    "currency": "USD",
-    "platform": "amazon-us",
-    "productId": "B0DZKBYW3Q",
-    "merchant": "Amazon US",
-    "title": "Dior Homme Parfum Spray for Men, 2.5 Ounce",
-    "price": null,
-    "note": "",
-    "productUrl": "https://www.amazon.com/dp/B0DZKBYW3Q",
-    "affiliateUrl": null,
-    "image": null,
-    "checkedAt": "2026-11-22T06:08:16.527Z",
-    "publishedAt": "2026-11-22T06:09:36.481Z"
   },
   {
     "slug": "amazon-us-b0chsdjd5w",
