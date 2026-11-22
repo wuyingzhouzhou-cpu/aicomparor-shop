@@ -31,6 +31,7 @@ No environment variables are required.
 | `/compare` | Placeholder. Comparison UI comes later |
 | `/privacy` `/terms` | Stubs linked from the footer |
 | `/[category]/[slug]` | Essay, for example `/boots/the-quiet-chelsea` |
+| `/products` and `/products/[slug]` | Published US products and individual product pages |
 
 ## Essays
 
@@ -56,6 +57,14 @@ To add an essay:
 3. The public URL is `/<category>/<slug>`.
 
 `ProductMention` is available in every essay. Its link opens in a new tab with `rel="sponsored noopener noreferrer"`.
+
+To reference a product pushed from the research dashboard, paste the MDX shown on its dashboard card. The reference reads the product title and retailer from the catalog and links to the product page.
+
+```mdx
+<PublishedProduct slug="amazon-us-example" />
+```
+
+When previewing with the UK Home Deals research dashboard, run `npm run dev -- --port 3001` for AiComparor. Pushing from the dashboard updates `src/data/published-products.json`.
 
 Placeholder plates are SVG files in `public/placeholders/`.
 

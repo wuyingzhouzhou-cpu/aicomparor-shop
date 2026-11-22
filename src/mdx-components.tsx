@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ComponentPropsWithoutRef } from "react";
 import { ProductCompare, ProductFigure } from "@/components/product-figure";
 import { ProductMention } from "@/components/product-mention";
+import { PublishedProduct } from "@/components/published-product";
 import { StructureFigure } from "@/components/structure-figure";
 
 function MdxAnchor({ href, children, ...rest }: ComponentPropsWithoutRef<"a">) {
@@ -36,6 +37,7 @@ const components = {
   ProductMention,
   ProductFigure,
   ProductCompare,
+  PublishedProduct,
   StructureFigure,
 } satisfies MDXComponents;
 

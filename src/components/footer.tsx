@@ -6,6 +6,7 @@ const editLinks = [
   { href: "/brushes", label: "Brushes" },
   { href: "/guides", label: "Guides" },
   { href: "/articles", label: "Articles" },
+  { href: "/products", label: "Products" },
   { href: "/guides/reading-a-boot", label: "How to Read a Boot" },
 ];
 
