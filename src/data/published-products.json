@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b08zxy1b7h",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B08ZXY1B7H",
+    "merchant": "Amazon US",
+    "title": "Mugler Alien Eau de Parfum - Long Lasting Floral Woody Womens Perfume",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B08ZXY1B7H",
+    "affiliateUrl": null,
+    "image": "https://m.media-amazon.com/images/I/512y06L3Q0L._SL1500_.jpg",
+    "checkedAt": "2026-11-22T06:25:37.434Z",
+    "publishedAt": "2026-11-22T06:25:44.343Z"
+  },
+  {
     "slug": "amazon-us-b0chsdjd5w",
     "currency": "USD",
     "platform": "amazon-us",
@@ -88,21 +103,6 @@
     "image": "https://m.media-amazon.com/images/I/61ObEnCKPKL._SL1500_.jpg",
     "checkedAt": "2026-11-22T06:21:42.034Z",
     "publishedAt": "2026-11-22T06:21:59.235Z"
-  },
-  {
-    "slug": "amazon-us-b08zxy1b7h",
-    "currency": "USD",
-    "platform": "amazon-us",
-    "productId": "B08ZXY1B7H",
-    "merchant": "Amazon US",
-    "title": "Mugler Alien Eau de Parfum - Long Lasting Floral Woody Womens Perfume",
-    "price": null,
-    "note": "",
-    "productUrl": "https://www.amazon.com/dp/B08ZXY1B7H",
-    "affiliateUrl": null,
-    "image": null,
-    "checkedAt": "2026-11-22T06:06:17.688Z",
-    "publishedAt": "2026-11-22T06:09:21.105Z"
   },
   {
     "slug": "amazon-us-b009u1ei7q",
