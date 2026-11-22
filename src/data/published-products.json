@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b0dzkbyw3q",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B0DZKBYW3Q",
+    "merchant": "Amazon US",
+    "title": "Dior Homme Parfum Spray for Men, 2.5 Ounce",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B0DZKBYW3Q",
+    "affiliateUrl": null,
+    "image": null,
+    "checkedAt": "2026-11-22T06:08:16.527Z",
+    "publishedAt": "2026-11-22T06:09:36.481Z"
+  },
+  {
     "slug": "amazon-us-b0chsdjd5w",
     "currency": "USD",
     "platform": "amazon-us",
