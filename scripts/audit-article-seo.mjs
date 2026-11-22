@@ -7,6 +7,7 @@ const args = process.argv.slice(2);
 const live = args.includes("--live");
 const requested = args.filter((arg) => arg !== "--live");
 const manifest = JSON.parse(await readFile(resolve(buildDir, "prerender-manifest.json"), "utf8"));
+const appPaths = JSON.parse(await readFile(resolve(buildDir, "app-path-routes-manifest.json"), "utf8"));
 const articles = Object.keys(manifest.routes)
   .filter((route) => manifest.routes[route].srcRoute === "/[category]/[slug]");
 const routes = requested.length ? requested : articles;
@@ -23,7 +24,21 @@ async function rendered(path, extension = ".html") {
     }
     return response.text();
   }
-  return readFile(resolve(buildDir, "server/app", path.slice(1) + extension), "utf8");
+  try {
+    return await readFile(resolve(buildDir, "server/app", path.slice(1) + extension), "utf8");
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+    // Next deployment adapters store prerendered responses under route-cache.
+    const source = manifest.routes[path]?.srcRoute ?? path;
+    const entry = Object.keys(appPaths).find((key) => appPaths[key] === source);
+    if (!entry) throw error;
+    const { getRouteCacheKey } = await import("next/dist/server/lib/route-cache-key.js");
+    const key = getRouteCacheKey(path, {
+      kind: entry.endsWith("/route") ? "APP_ROUTE" : "APP_PAGE",
+      sourceRoute: entry,
+    });
+    return readFile(resolve(buildDir, "server", key.slice(1) + extension), "utf8");
+  }
 }
 
 // Next serializes attributes in double quotes in the rendered HTML.
