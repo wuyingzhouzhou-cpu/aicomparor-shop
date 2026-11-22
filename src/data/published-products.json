@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "slug": "amazon-us-b009u1ei7q",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B009U1EI7Q",
+    "merchant": "Amazon US",
+    "title": "Lancôme Trésor Eau de Parfum Long Lasting Women's Perfume with Rose & Lilac",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B009U1EI7Q",
+    "affiliateUrl": null,
+    "image": null,
+    "checkedAt": "2026-11-22T06:06:05.030Z",
+    "publishedAt": "2026-11-22T06:09:14.726Z"
+  }
+]
