@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b000b63o0q",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B000B63O0Q",
+    "merchant": "Amazon US",
+    "title": "4711 by Muelhens Eau de Cologne Splash 6.8 oz",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B000B63O0Q",
+    "affiliateUrl": null,
+    "image": null,
+    "checkedAt": "2026-11-22T06:08:39.456Z",
+    "publishedAt": "2026-11-22T06:09:49.770Z"
+  },
+  {
     "slug": "amazon-us-b07x4b8rb9",
     "currency": "USD",
     "platform": "amazon-us",
