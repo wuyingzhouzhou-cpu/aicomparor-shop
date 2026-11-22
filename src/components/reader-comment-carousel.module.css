@@ -1,0 +1,24 @@
+.window {
+  overflow: hidden;
+  aspect-ratio: 960 / 676;
+}
+
+.row {
+  display: grid;
+  align-items: center;
+  aspect-ratio: 960 / 338;
+}
+
+.advance {
+  transform: translateY(calc(-100% / 3));
+  animation: move-up 460ms ease-out;
+}
+
+@keyframes move-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% / 3)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .advance { animation: none; }
+}

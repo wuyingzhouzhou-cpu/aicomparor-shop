@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleCard } from "@/components/article-card";
-import Image from "next/image";
+import { ReaderCommentCarousel } from "@/components/reader-comment-carousel";
 import { connection } from "next/server";
 import { Suspense } from "react";
-import comments from "@/data/home-comments.json";
 import { publishedProducts } from "@/lib/published-products";
 import { DailyProductCarousel } from "@/components/daily-product-carousel";
 import { CategoryCard } from "@/components/category-card";
@@ -67,15 +66,7 @@ export default function HomePage() {
           <h1 id="readers-heading" className="my-3 font-serif text-4xl leading-none tracking-tight md:text-5xl">
             What readers are asking
           </h1>
-          <div className="mt-5 grid gap-3">
-            {comments.map(comment => (
-              <a key={comment.slug} href={comment.url} className="block transition-shadow hover:shadow-md">
-                <Image src={`/assets/home/comments/${comment.slug}.png`} width={960} height={comment.height}
-                  alt={`${comment.topic} — u/${comment.author} on r/Perfumes: “${comment.text}” Read the Reddit discussion.`}
-                  className="h-auto w-full" sizes="(min-width:1024px) 520px, 100vw" />
-              </a>
-            ))}
-          </div>
+          <ReaderCommentCarousel />
         </section>
         <Suspense fallback={<div aria-label="Loading daily picks" className="aspect-square border border-line bg-surface" />}>
           <DailyFeature />
