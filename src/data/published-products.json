@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b07x5d6dh4",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B07X5D6DH4",
+    "merchant": "Amazon US",
+    "title": "Dior Sauvage Parfum Spray for Men 3.4 Ounces",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B07X5D6DH4",
+    "affiliateUrl": null,
+    "image": null,
+    "checkedAt": "2026-11-22T06:08:23.741Z",
+    "publishedAt": "2026-11-22T06:09:40.326Z"
+  },
+  {
     "slug": "amazon-us-b0dzkbyw3q",
     "currency": "USD",
     "platform": "amazon-us",
