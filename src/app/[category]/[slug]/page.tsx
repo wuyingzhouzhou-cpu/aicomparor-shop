@@ -35,6 +35,14 @@ const heroAlts: Record<string, string> = {
     "Sol de Janeiro Cheirosa 62 and Cheirosa 68 perfume mists, both bottles fully in frame.",
   "/assets/perfume/neroli-at-dusk/hero/4711-original-edc-splash.jpg":
     "4711 Original Eau de Cologne splash bottle with its blue and gold label.",
+  "/assets/perfume/jasmine-perfume-bright-vs-rich/hero.webp":
+    "Purple Mugler Alien Eau de Parfum bottle with gold trim.",
+  "/assets/perfume/peach-perfumes-fresh-vs-sweet/hero.webp":
+    "Liis Floating Eau de Parfum, the peach-and-linen fragrance discussed in the guide.",
+  "/assets/perfume/perfume-discovery-sets-spray-vs-dabber/hero.webp":
+    "TOCCA Mini Discovery Set perfume spray vials in their gift packaging.",
+  "/assets/perfume/water-based-perfume-longevity/hero.webp":
+    "Dior Sauvage Eau Forte bottle with a pale base and dark cap.",
   "/assets/perfume/solid-perfume-vs-rollerball/hero/hero-3x2-glossier-you-solid.jpg":
     "Glossier You Solid perfume compact, open, with the pink case and solid balm fully in frame.",
   "/assets/guides/clear-cosmetic-case-vs-neoprene-toiletry/hero/hero-3x2-calpak-large-clear-stone.jpg":

@@ -81,6 +81,18 @@ import PerfumeThatSmellsLikeLemonJuice, {
 import PerfumesThatSmellLikeWhiteBarSoap, {
   frontmatter as perfumesThatSmellLikeWhiteBarSoap,
 } from "@/content/perfume/perfumes-that-smell-like-white-bar-soap.mdx";
+import JasminePerfumeBrightVsRich, {
+  frontmatter as jasminePerfumeBrightVsRich,
+} from "@/content/perfume/jasmine-perfume-bright-vs-rich.mdx";
+import PeachPerfumesFreshVsSweet, {
+  frontmatter as peachPerfumesFreshVsSweet,
+} from "@/content/perfume/peach-perfumes-fresh-vs-sweet.mdx";
+import PerfumeDiscoverySetsSprayVsDabber, {
+  frontmatter as perfumeDiscoverySetsSprayVsDabber,
+} from "@/content/perfume/perfume-discovery-sets-spray-vs-dabber.mdx";
+import WaterBasedPerfumeLongevity, {
+  frontmatter as waterBasedPerfumeLongevity,
+} from "@/content/perfume/water-based-perfume-longevity.mdx";
 import {
   type ArticleSummary,
   type Category,
@@ -180,6 +192,30 @@ const registry: Article[] = [
     WesternVsRiding,
   ),
   entry("perfume", "neroli-at-dusk", neroliAtDusk as ArticleSummary, NeroliAtDusk),
+  entry(
+    "perfume",
+    "jasmine-perfume-bright-vs-rich",
+    jasminePerfumeBrightVsRich as ArticleSummary,
+    JasminePerfumeBrightVsRich,
+  ),
+  entry(
+    "perfume",
+    "peach-perfumes-fresh-vs-sweet",
+    peachPerfumesFreshVsSweet as ArticleSummary,
+    PeachPerfumesFreshVsSweet,
+  ),
+  entry(
+    "perfume",
+    "perfume-discovery-sets-spray-vs-dabber",
+    perfumeDiscoverySetsSprayVsDabber as ArticleSummary,
+    PerfumeDiscoverySetsSprayVsDabber,
+  ),
+  entry(
+    "perfume",
+    "water-based-perfume-longevity",
+    waterBasedPerfumeLongevity as ArticleSummary,
+    WaterBasedPerfumeLongevity,
+  ),
   entry(
     "perfume",
     "perfume-that-smells-like-lemon-juice",
