@@ -33,6 +33,8 @@ const heroAlts: Record<string, string> = {
     "Tom Ford Black Orchid bottle, the full bottle in frame.",
   "/assets/perfume/how-to-layer-perfume/hero/hero-3x2-blotters-or-bottles.jpg":
     "Sol de Janeiro Cheirosa 62 and Cheirosa 68 perfume mists, both bottles fully in frame.",
+  "/assets/perfume/neroli-at-dusk/hero/4711-original-edc-splash.jpg":
+    "4711 Original Eau de Cologne splash bottle with its blue and gold label.",
   "/assets/perfume/solid-perfume-vs-rollerball/hero/hero-3x2-glossier-you-solid.jpg":
     "Glossier You Solid perfume compact, open, with the pink case and solid balm fully in frame.",
   "/assets/guides/clear-cosmetic-case-vs-neoprene-toiletry/hero/hero-3x2-calpak-large-clear-stone.jpg":
@@ -49,6 +51,8 @@ const heroAlts: Record<string, string> = {
     "NARS Orgasm pressed powder blush, the box and open compact fully in frame.",
   "/assets/articles/best-dior-lip-glow-dupes/hero/hero-3x2-dior-lip-glow-or-glossy-balms.jpg":
     "Dior Addict Lip Glow balm, the case and pink stick fully in frame.",
+  "/assets/articles/best-dior-lip-glow-dupes/inline/inline-4x3-dior-addict-lip-glow-balm.jpg":
+    "Dior Addict Lip Glow Balm in 001 Pink with the tinted stick exposed.",
   "/assets/articles/best-projector-for-bedroom/hero/hero-3x2-xgimi-mogo-3-pro.jpg":
     "XGIMI MoGo 3 Pro portable projector on its tilt stand, the full unit in frame.",
 };

@@ -7,3 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Article publishing
+
+For finished articles being published or republished, apply the installed `$finished-seo-audit` skill and follow [Article publishing](README.md#article-publishing). Fix confirmed findings, rerun the checks, and verify the affected public routes after deployment.

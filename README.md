@@ -68,6 +68,12 @@ When previewing with the UK Home Deals research dashboard, run `npm run dev -- -
 
 Placeholder plates are SVG files in `public/placeholders/`.
 
+## Article publishing
+
+1. In Codex, run the user skill **成稿 SEO 审核** (`$finished-seo-audit`) against the finished article and its sources. Review search intent, evidence, brand and SKU accuracy, affiliate disclosure, and links before publishing.
+2. Fix the findings and run `npm run lint` and `npm run build`. The build runs the rendered article audit and fails if a technical check fails.
+3. After deploying, run `npm run seo:audit -- --live /category/slug` for each published or changed article route. To recheck just one route against the current local build, use `npm run seo:audit -- /category/slug`.
+
 ## Deploy on Vercel
 
 1. Push the repository to GitHub.
