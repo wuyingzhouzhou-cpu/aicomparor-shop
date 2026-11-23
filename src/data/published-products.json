@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b00gna9kkm",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B00GNA9KKM",
+    "merchant": "Amazon US",
+    "title": "EcoTools Enhancing Eye Brush Set, Eye Makeup Brushes, 2 Piece",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B00GNA9KKM",
+    "affiliateUrl": null,
+    "image": "https://m.media-amazon.com/images/I/71QPD-iLe9L._SL1500_.jpg",
+    "checkedAt": "2026-11-23T07:08:16.651Z",
+    "publishedAt": "2026-11-23T07:16:55.167Z"
+  },
+  {
     "slug": "aicomparor-aliexpress-1005013000258674",
     "currency": "USD",
     "platform": "aliexpress",
