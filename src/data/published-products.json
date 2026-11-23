@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b08dqlqgcv",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B08DQLQGCV",
+    "merchant": "Amazon US",
+    "title": "Franco Sarto Womens Meyer Knee High Flat Boots",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B08DQLQGCV",
+    "affiliateUrl": null,
+    "image": "https://m.media-amazon.com/images/I/61eBI2GSAHL._AC_SL1500_.jpg",
+    "checkedAt": "2026-11-23T07:07:30.577Z",
+    "publishedAt": "2026-11-23T07:15:11.214Z"
+  },
+  {
     "slug": "amazon-us-b009u1ei7q",
     "currency": "USD",
     "platform": "amazon-us",
