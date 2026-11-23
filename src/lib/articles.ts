@@ -1,3 +1,9 @@
+import Screen100InchProjectorThrowDistance, { frontmatter as metaScreen100InchProjectorThrowDistance } from "@/content/articles/100-inch-projector-throw-distance.mdx";
+import Screen100InchTvVsProjector, { frontmatter as metaScreen100InchTvVsProjector } from "@/content/articles/100-inch-tv-vs-projector.mdx";
+import MakeupBrushSetOrSingleUpgrade, { frontmatter as metaMakeupBrushSetOrSingleUpgrade } from "@/content/brushes/makeup-brush-set-or-single-upgrade.mdx";
+import ConcealerBrushShape, { frontmatter as metaConcealerBrushShape } from "@/content/brushes/concealer-brush-shape.mdx";
+import KneeHighBootCalfFitWithTights, { frontmatter as metaKneeHighBootCalfFitWithTights } from "@/content/boots/knee-high-boot-calf-fit-with-tights.mdx";
+import UsMadeBlackLaceUpBoots, { frontmatter as metaUsMadeBlackLaceUpBoots } from "@/content/boots/us-made-black-lace-up-boots.mdx";
 import type { ComponentType } from "react";
 import type { MDXProps } from "mdx/types";
 import BestDiorLipGlowDupes, {
@@ -148,6 +154,12 @@ function entry(
 }
 
 const registry: Article[] = [
+  entry("articles", "100-inch-projector-throw-distance", metaScreen100InchProjectorThrowDistance as ArticleSummary, Screen100InchProjectorThrowDistance),
+  entry("articles", "100-inch-tv-vs-projector", metaScreen100InchTvVsProjector as ArticleSummary, Screen100InchTvVsProjector),
+  entry("brushes", "makeup-brush-set-or-single-upgrade", metaMakeupBrushSetOrSingleUpgrade as ArticleSummary, MakeupBrushSetOrSingleUpgrade),
+  entry("brushes", "concealer-brush-shape", metaConcealerBrushShape as ArticleSummary, ConcealerBrushShape),
+  entry("boots", "knee-high-boot-calf-fit-with-tights", metaKneeHighBootCalfFitWithTights as ArticleSummary, KneeHighBootCalfFitWithTights),
+  entry("boots", "us-made-black-lace-up-boots", metaUsMadeBlackLaceUpBoots as ArticleSummary, UsMadeBlackLaceUpBoots),
   entry(
     "articles",
     "dior-lip-glow-butter-vs-balm",
