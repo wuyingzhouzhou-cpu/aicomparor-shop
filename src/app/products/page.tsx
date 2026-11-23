@@ -1,6 +1,7 @@
+import {liveProducts} from "@/lib/project-feed";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { formatProductPrice, productPath, publishedProducts } from "@/lib/published-products";
+import { formatProductPrice, productPath } from "@/lib/published-products";
 
 export const metadata: Metadata = {
   title: "Products",
@@ -8,7 +9,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/products" },
 };
 
-export default function ProductsPage() {
+export default async function ProductsPage() {
+  const publishedProducts=await liveProducts();
   return (
     <section className="content-wrap flex flex-col gap-space-4 py-space-8">
       <h1 className="font-serif text-5xl text-ink">Products</h1>

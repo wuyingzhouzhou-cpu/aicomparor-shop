@@ -1,3 +1,4 @@
+import {feedIndex} from "@/lib/project-feed";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -58,10 +59,13 @@ async function CategoryContent({
     notFound();
   }
 
+  const legacy=getSummariesByCategory(category);
+  const rows=(await feedIndex()).filter(r=>r.kind==="article" && r.path.startsWith("/"+category+"/"));
+  const articles=rows.map(r=>{const slug=r.path.split("/")[2];const old=legacy.find(a=>a.slug===slug);return {...old,slug,category,title:r.title,description:r.description,updated:r.publishedAt.slice(0,10),readingMinutes:old?.readingMinutes??3,heroImage:old?.heroImage??""};});
   return (
     <CategoryListing
       department={departments[category]}
-      articles={getSummariesByCategory(category)}
+      articles={articles}
     />
   );
 }

@@ -1,6 +1,6 @@
 import catalog from "@/data/published-products.json";
 
-type Product = {
+export type PublishedProduct = {
   slug: string;
   merchant: string;
   title: string;
@@ -12,7 +12,7 @@ type Product = {
   publishedAt: string;
 };
 
-export const publishedProducts: readonly Product[] = catalog;
+export const publishedProducts: readonly PublishedProduct[] = catalog;
 
 const usd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
 

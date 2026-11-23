@@ -1,3 +1,5 @@
+import { managedArticle } from "@/lib/project-feed";
+import { ManagedArticle } from "@/components/managed-article";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -88,6 +90,9 @@ export async function generateMetadata({
   params: Promise<{ category: string; slug: string }>;
 }): Promise<Metadata> {
   const { category, slug } = await params;
+  const path = `/${category}/${slug}`;
+  const doc = await managedArticle(path);
+  if(doc) return {title:doc.title,description:doc.description,alternates:{canonical:path}};
   const article = getArticle(category, slug);
 
   if (!article) {
@@ -125,6 +130,9 @@ async function ArticleContent({
   params: Promise<{ category: string; slug: string }>;
 }) {
   const { category, slug } = await params;
+  const path = `/${category}/${slug}`;
+  const doc = await managedArticle(path);
+  if(doc) return <ManagedArticle doc={doc} path={path} />;
 
   if (!isCategory(category)) {
     notFound();

@@ -1,3 +1,4 @@
+import {liveProducts} from "@/lib/project-feed";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,6 @@ import { ButtonPrimary } from "@/components/button";
 import { DisclosureBar } from "@/components/disclosure-bar";
 import {
   formatProductPrice,
-  getPublishedProduct,
   productPath,
   publishedProducts,
 } from "@/lib/published-products";
@@ -21,7 +21,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
-  const product = getPublishedProduct((await params).slug);
+  const {slug}=await params;
+  const product=(await liveProducts()).find(item=>item.slug===slug);
   if (!product) return { title: "Product not found" };
 
   return {
@@ -40,7 +41,8 @@ export default function ProductPage({ params }: ProductPageProps) {
 }
 
 async function ProductDetails({ params }: ProductPageProps) {
-  const product = getPublishedProduct((await params).slug);
+  const {slug}=await params;
+  const product=(await liveProducts()).find(item=>item.slug===slug);
   if (!product) notFound();
 
   const reviewed = new Intl.DateTimeFormat("en-US", {

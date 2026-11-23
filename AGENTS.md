@@ -10,4 +10,4 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Article publishing
 
-For finished articles being published or republished, apply the installed `$finished-seo-audit` skill and follow [Article publishing](README.md#article-publishing). Fix confirmed findings, rerun the checks, and verify the affected public routes after deployment.
+For finished articles being published or republished, apply the installed `$finished-seo-audit` skill and follow [Article publishing](README.md#article-publishing). Fix confirmed findings, rerun the checks, and verify the affected public routes after CMS publication.

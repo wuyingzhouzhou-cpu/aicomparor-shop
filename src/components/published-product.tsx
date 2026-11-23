@@ -1,8 +1,9 @@
+import {liveProducts} from "@/lib/project-feed";
 import { ButtonSecondary } from "@/components/button";
-import { getPublishedProduct, productPath } from "@/lib/published-products";
+import { productPath } from "@/lib/published-products";
 
-export function PublishedProduct({ slug }: { slug: string }) {
-  const product = getPublishedProduct(slug);
+export async function PublishedProduct({ slug }: { slug: string }) {
+  const product = (await liveProducts()).find(item=>item.slug===slug);
   if (!product) return null;
 
   return (

@@ -1,10 +1,11 @@
+import {feedIndex,liveProducts} from "@/lib/project-feed";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleCard } from "@/components/article-card";
 import { ReaderCommentCarousel } from "@/components/reader-comment-carousel";
 import { connection } from "next/server";
 import { Suspense } from "react";
-import { publishedProducts } from "@/lib/published-products";
+
 import { DailyProductCarousel } from "@/components/daily-product-carousel";
 import { CategoryCard } from "@/components/category-card";
 import { DisclosureBar } from "@/components/disclosure-bar";
@@ -45,7 +46,7 @@ const editorialPhotos: Record<string, [string, string]> = {
 };
 
 async function DailyFeature() {
-  const slides = publishedProducts.flatMap(product => {
+  const slides = (await liveProducts()).flatMap(product => {
     const editorial = editorialPhotos[product.slug];
     const image = product.image || editorial?.[1];
     return image ? [{ slug: product.slug, title: editorial?.[0] ?? product.title, image, merchant: product.merchant }] : [];
@@ -55,8 +56,9 @@ async function DailyFeature() {
   return <DailyProductCarousel slides={slides} initialTime={new Date().getTime()} />;
 }
 
-export default function HomePage() {
+export default async function HomePage() {
   const picks = getEditorsPicks();
+  const latest=(await feedIndex()).filter(row=>row.kind==="article").slice(0,8);
 
   return (
     <div className="content-wrap flex flex-col gap-space-8 py-space-8">
@@ -73,6 +75,7 @@ export default function HomePage() {
         </Suspense>
       </div>
 
+      <section><h2 className="font-serif text-4xl">Latest articles</h2><ul className="grid gap-3 py-4 sm:grid-cols-2">{latest.map(row=><li key={row.path}><Link href={row.path}>{row.title}</Link></li>)}</ul></section>
       <section aria-labelledby="departments-heading">
         <div className="mb-space-4 max-w-[var(--article-max)]">
           <p className="eyebrow">Departments</p>

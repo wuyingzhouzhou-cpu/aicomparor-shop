@@ -1,3 +1,4 @@
+import {feedIndex} from "@/lib/project-feed";
 import type { MetadataRoute } from "next";
 import { getArticles } from "@/lib/articles";
 import { productPath, publishedProducts } from "@/lib/published-products";
@@ -5,7 +6,8 @@ import { articlePath } from "@/lib/types";
 
 const baseUrl = "https://www.aicomparor.shop";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const current=(await feedIndex()).map(row=>({url:baseUrl+row.path,lastModified:row.publishedAt}));
   const pages: MetadataRoute.Sitemap = [
     { url: baseUrl, changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/boots`, changeFrequency: "weekly", priority: 0.8 },
@@ -32,5 +34,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: product.publishedAt,
   }));
 
-  return [...pages, ...articles, ...products];
+  return [...pages,...current,...[...articles,...products].filter(old=>!current.some(row=>row.url===old.url))];
 }

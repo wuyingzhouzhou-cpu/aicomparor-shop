@@ -6,9 +6,9 @@ const origin = "https://www.aicomparor.shop";
 const args = process.argv.slice(2);
 const live = args.includes("--live");
 const requested = args.filter((arg) => arg !== "--live");
-const manifest = JSON.parse(await readFile(resolve(buildDir, "prerender-manifest.json"), "utf8"));
-const appPaths = JSON.parse(await readFile(resolve(buildDir, "app-path-routes-manifest.json"), "utf8"));
-const articles = Object.keys(manifest.routes)
+const manifest = live ? { routes: {} } : JSON.parse(await readFile(resolve(buildDir, "prerender-manifest.json"), "utf8"));
+const appPaths = live ? {} : JSON.parse(await readFile(resolve(buildDir, "app-path-routes-manifest.json"), "utf8"));
+const articles = live ? (await (await fetch("https://admin.expression.net.cn/feeds/aicomparor")).json()).filter(row=>row.kind==="article").map(row=>row.path) : Object.keys(manifest.routes)
   .filter((route) => manifest.routes[route].srcRoute === "/[category]/[slug]");
 const routes = requested.length ? requested : articles;
 
@@ -59,7 +59,7 @@ function check(condition, route, message) {
   console.error(`${route}: ${message}`);
 }
 
-if (!requested.length) {
+if (!live && !requested.length) {
   const files = await readdir("src/content", { recursive: true });
   for (const file of files.filter((file) => file.endsWith(".mdx"))) {
     const route = "/" + file.slice(0, -4);
