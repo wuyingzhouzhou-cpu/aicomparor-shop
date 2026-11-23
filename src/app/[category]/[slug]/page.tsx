@@ -15,6 +15,16 @@ import { isCategory } from "@/lib/types";
 
 /** Article-top heroes are always 3:2. Alts stay specific when the still is named. */
 const heroAlts: Record<string, string> = {
+  "/assets/boots/us-made-black-lace-up-boots/hero.webp":
+    "Red Wing Silversmith 3361 black leather lace-up boot.",
+  "/assets/brushes/concealer-brush-shape/hero.webp":
+    "Haus Labs Concealer Brush with a domed head and pointed tip.",
+  "/assets/brushes/travel-makeup-brushes/hero/hero-3x2-otis-batterbee-retractable-edit.jpg":
+    "Otis Batterbee retractable travel makeup brushes.",
+  "/assets/articles/best-projector-for-bedroom/inline/inline-4x3-samsung-freestyle-2nd-gen.jpg":
+    "Samsung Freestyle projector on its adjustable cradle.",
+  "/assets/articles/best-projector-for-bedroom/inline/inline-4x3-benq-gv31.jpg":
+    "BenQ GV31 projector with its rotating lens housing.",
   "/assets/guides/lay-flat-vs-zip-tray-makeup-bags/hero-open-compare.jpg":
     "Lay-n-Go COSMO drawstring mat opened flat, beside a KUSSHI Signature zip tray unzipped to a red lining.",
   "/assets/brushes/a-brush-with-weight/hero/hero-3x2-hakuhodo-full-no-50.jpg":

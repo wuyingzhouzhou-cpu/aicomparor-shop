@@ -178,12 +178,12 @@ const articleFaqs: Record<string, FaqItem[]> = {
     {
       question: "Are zip ankle boots more comfortable?",
       answer:
-        "They can be easier to put on and adjust, especially for high insteps or thick socks. Comfort still depends on the last, toe shape, and heel height—not the zipper alone.",
+        "A zipper opens the shaft for entry, especially useful with high insteps or thick socks. Only laces let you vary the closed fit. Comfort still depends on the last, toe shape, and heel height—not the zipper alone.",
     },
     {
       question: "Do Chelsea boots work with wide calves?",
       answer:
-        "Often less well than an adjustable zip or lace ankle boot. Elastic width and shaft height are fixed once you pull on. If the top line bites mid-calf, choose a zip ankle boot or a lower petite shaft.",
+        "Compare the closed shaft circumference of each pair. Elastic width and shaft height are fixed once you pull on. If the top line bites mid-calf, choose a zip ankle boot or a lower petite shaft.",
     },
   ],
   "waterproof-ankle-vs-chelsea-boots": [
@@ -428,7 +428,7 @@ const articleFaqs: Record<string, FaqItem[]> = {
     {
       question: "Which dual-ended brushes are best for travel?",
       answer:
-        "Dual-ended means fewer handles: one shaft, two jobs. Type examples on this page include Sculpted by Aimee–class complexion brushes (blush or bronzer on one end, a smaller concealer end on the other), Glossier’s Cloud Paint cheek brush–class (silicone with synthetic fibers), and Laura Geller’s To-Go 4-in-1–class (heads that swap on one shaft). They illustrate the form, not a ranked shortlist. Skip the form if both ends get dirty and you will not rinse on the trip.",
+        "For eyeshadow, EcoTools Eye Enhancing Duo gives you four heads on two handles. For cheeks, the Haus Labs Dual-Ended Multi-Purpose Brush pairs an angled head with a dome. Pack both ends flat in a case long enough to protect the tips.",
     },
     {
       question: "What makes a makeup brush good for travel?",
