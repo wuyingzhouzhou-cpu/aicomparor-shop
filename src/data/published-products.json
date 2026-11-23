@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b00061o4dw",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B00061O4DW",
+    "merchant": "Amazon US",
+    "title": "Elite Screens Manual Series, 100-INCH 16:9, Pull Down Manual Projector Screen with AUTO LOCK, Movie Home Theater 8K / 4K Ultra HD 3D Ready, 2-YEAR WARRANTY, M100UWH, 16:9, Black",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B00061O4DW",
+    "affiliateUrl": null,
+    "image": "https://m.media-amazon.com/images/I/61wD9LxbXiL._AC_SL1500_.jpg",
+    "checkedAt": "2026-11-23T07:09:44.861Z",
+    "publishedAt": "2026-11-23T07:17:08.318Z"
+  },
+  {
     "slug": "amazon-us-b01n1mkxem",
     "currency": "USD",
     "platform": "amazon-us",
