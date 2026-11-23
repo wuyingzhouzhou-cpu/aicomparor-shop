@@ -1,5 +1,20 @@
 [
   {
+    "slug": "aicomparor-aliexpress-1005013000258674",
+    "currency": "USD",
+    "platform": "aliexpress",
+    "productId": "1005013000258674",
+    "merchant": "AliExpress",
+    "title": "Aliexpress",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.aliexpress.com/item/1005013000258674.html",
+    "affiliateUrl": "https://s.click.aliexpress.com/e/_c3JNMUDr",
+    "image": "https://ae-pic-a1.aliexpress-media.com/kf/Scc0e42d66e11482182c88c5fe89de19cn.jpg",
+    "checkedAt": "2026-11-23T07:07:48.570Z",
+    "publishedAt": "2026-11-23T07:16:37.912Z"
+  },
+  {
     "slug": "amazon-us-b08dqlqgcv",
     "currency": "USD",
     "platform": "amazon-us",
