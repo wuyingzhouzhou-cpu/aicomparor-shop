@@ -1,5 +1,20 @@
 [
   {
+    "slug": "amazon-us-b01n1mkxem",
+    "currency": "USD",
+    "platform": "amazon-us",
+    "productId": "B01N1MKXEM",
+    "merchant": "Amazon US",
+    "title": "Real Techniques 3-Piece Eye Shade & Blend Set for Eyeshadow & Brows",
+    "price": null,
+    "note": "",
+    "productUrl": "https://www.amazon.com/dp/B01N1MKXEM",
+    "affiliateUrl": null,
+    "image": "https://m.media-amazon.com/images/I/61CidlX9H8L._SL1500_.jpg",
+    "checkedAt": "2026-11-23T07:09:35.150Z",
+    "publishedAt": "2026-11-23T07:17:01.985Z"
+  },
+  {
     "slug": "amazon-us-b00gna9kkm",
     "currency": "USD",
     "platform": "amazon-us",
