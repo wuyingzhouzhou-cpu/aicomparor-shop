@@ -9,7 +9,6 @@ import { Suspense } from "react";
 import { DailyProductCarousel } from "@/components/daily-product-carousel";
 import { CategoryCard } from "@/components/category-card";
 import { DisclosureBar } from "@/components/disclosure-bar";
-import { NewsletterForm } from "@/components/newsletter-form";
 import { getEditorsPicks } from "@/lib/articles";
 import { homeDepartments } from "@/lib/departments";
 
@@ -155,10 +154,8 @@ export default async function HomePage() {
           A note, when there is something to say.
         </h2>
         <p className="mt-space-3 max-w-[var(--article-max)] text-lg leading-relaxed text-ink-muted">
-          No weekly flood. We write when the edit changes. The list is not open yet, and this field
-          does not send your address anywhere.
+          No weekly flood. We write when the edit changes. The mailing list is not open yet.
         </p>
-        <NewsletterForm />
       </section>
     </div>
   );
