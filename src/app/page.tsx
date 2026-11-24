@@ -1,6 +1,7 @@
 import {feedIndex,liveProducts} from "@/lib/project-feed";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ProductGrid, ShopTabs } from "@/components/product-grid";
 import { ArticleCard } from "@/components/article-card";
 import { ReaderCommentCarousel } from "@/components/reader-comment-carousel";
 import { connection } from "next/server";
@@ -57,16 +58,26 @@ async function DailyFeature() {
 
 export default async function HomePage() {
   const picks = getEditorsPicks();
-  const latest=(await feedIndex()).filter(row=>row.kind==="article").slice(0,8);
+  const [products, entries] = await Promise.all([liveProducts(), feedIndex()]);
+  const newest = [...products].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 8);
+  const latest=entries.filter(row=>row.kind==="article").slice(0,8);
 
   return (
     <div className="content-wrap flex flex-col gap-space-8 py-space-8">
+      <section aria-labelledby="new-products" className="grid gap-4">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h1 id="new-products" className="font-serif text-4xl tracking-tight md:text-5xl">New arrivals</h1>
+          <Link href="/products" className="text-sm underline underline-offset-4">View all products →</Link>
+        </div>
+        <ShopTabs current="/" />
+        <ProductGrid products={newest} />
+      </section>
       <div className="grid items-start gap-space-4 lg:grid-cols-[1.05fr_1fr] lg:gap-space-6">
         <section aria-labelledby="readers-heading">
           <p className="eyebrow">From Reddit</p>
-          <h1 id="readers-heading" className="my-3 font-serif text-4xl leading-none tracking-tight md:text-5xl">
+          <h2 id="readers-heading" className="my-3 font-serif text-4xl leading-none tracking-tight md:text-5xl">
             What readers are asking
-          </h1>
+          </h2>
           <ReaderCommentCarousel />
         </section>
         <Suspense fallback={<div aria-label="Loading daily picks" className="aspect-square border border-line bg-surface" />}>

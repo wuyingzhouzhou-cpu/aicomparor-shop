@@ -1,4 +1,5 @@
 import {liveProducts} from "@/lib/project-feed";
+import { shopSectionFor, shopSections } from "@/lib/shop-sections";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,6 +46,7 @@ async function ProductDetails({ params }: ProductPageProps) {
   const product=(await liveProducts()).find(item=>item.slug===slug);
   if (!product) notFound();
 
+  const department = shopSections.find(group => group.slug === shopSectionFor(product.title));
   const reviewed = new Intl.DateTimeFormat("en-US", {
     dateStyle: "medium",
     timeZone: "America/New_York",
@@ -52,8 +54,8 @@ async function ProductDetails({ params }: ProductPageProps) {
 
   return (
     <article className="content-wrap flex flex-col gap-space-4 py-space-8">
-      <Link href="/products" className="self-start text-sm text-accent underline">
-        All products
+      <Link href={department ? "/shop/" + department.slug : "/products"} className="self-start text-sm text-accent underline">
+        {department?.label ?? "All products"}
       </Link>
       <div className={product.image ? "grid items-start gap-space-6 md:grid-cols-2" : "max-w-[var(--article-max)]"}>
         {product.image ? (
