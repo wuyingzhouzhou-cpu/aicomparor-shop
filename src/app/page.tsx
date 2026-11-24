@@ -14,27 +14,27 @@ import { homeDepartments } from "@/lib/departments";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "AiComparor — A magazine of boots, perfume, and brushes",
+    absolute: "AiComparor — Shopping guides for women",
   },
   description:
-    "AiComparor reads boots, perfume, and brushes slowly. A short edit of what is worth wearing, and wearing again.",
+    "Compare clothing, shoes, beauty and home tech with shopping guides for women in the US.",
   alternates: {
     canonical: "https://www.aicomparor.shop/",
   },
   openGraph: {
     type: "website",
     url: "https://www.aicomparor.shop/",
-    title: "AiComparor — A magazine of boots, perfume, and brushes",
+    title: "AiComparor — Shopping guides for women",
     description:
-      "AiComparor reads boots, perfume, and brushes slowly. A short edit of what is worth wearing, and wearing again.",
+      "Compare clothing, shoes, beauty and home tech with shopping guides for women in the US.",
     siteName: "AiComparor",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AiComparor — A magazine of boots, perfume, and brushes",
+    title: "AiComparor — Shopping guides for women",
     description:
-      "AiComparor reads boots, perfume, and brushes slowly. A short edit of what is worth wearing, and wearing again.",
+      "Compare clothing, shoes, beauty and home tech with shopping guides for women in the US.",
   },
 };
 
@@ -82,7 +82,7 @@ export default async function HomePage() {
             id="departments-heading"
             className="mt-space-2 font-serif text-4xl tracking-[-0.03em] text-ink md:text-5xl"
           >
-            Four rooms
+            Explore the archives
           </h2>
         </div>
         <div className="grid gap-space-6 md:grid-cols-3">

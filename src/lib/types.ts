@@ -17,6 +17,7 @@ export type ArticleSummary = {
   updated: string;
   readingMinutes: number;
   heroImage: string;
+  productCover?: boolean;
   toc?: TocItem[];
 };
 

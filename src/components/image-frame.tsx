@@ -20,6 +20,7 @@ type ImageFrameProps = {
   alt?: string;
   ratio: ImageFrameRatio;
   priority?: boolean;
+  contain?: boolean;
   sizes?: string;
 };
 
@@ -28,6 +29,7 @@ export function ImageFrame({
   alt = "",
   ratio,
   priority = false,
+  contain = false,
   sizes = "(min-width: 1024px) 540px, 100vw",
 }: ImageFrameProps) {
   const decorative = alt.length === 0;
@@ -43,7 +45,7 @@ export function ImageFrame({
         fill
         unoptimized
         sizes={sizes}
-        className="object-cover object-center"
+        className={contain ? "bg-white object-contain p-2" : "object-cover object-center"}
         {...(priority ? { preload: true } : {})}
       />
     </div>

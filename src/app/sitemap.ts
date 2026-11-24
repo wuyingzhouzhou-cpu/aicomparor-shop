@@ -1,3 +1,4 @@
+import { shopSections } from "@/lib/shop-sections";
 import {feedIndex} from "@/lib/project-feed";
 import type { MetadataRoute } from "next";
 import { getArticles } from "@/lib/articles";
@@ -9,6 +10,7 @@ const baseUrl = "https://www.aicomparor.shop";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const current=(await feedIndex()).map(row=>({url:baseUrl+row.path,lastModified:row.publishedAt}));
   const pages: MetadataRoute.Sitemap = [
+    ...shopSections.map(section => ({ url: baseUrl + "/shop/" + section.slug })),
     { url: baseUrl, changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/boots`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/perfume`, changeFrequency: "weekly", priority: 0.8 },

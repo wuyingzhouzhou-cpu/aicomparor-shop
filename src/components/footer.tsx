@@ -38,7 +38,7 @@ export function Footer() {
         <div className="md:col-span-2">
           <p className="font-serif text-3xl tracking-[-0.03em]">AiComparor</p>
           <p className="mt-space-2 max-w-sm text-sm leading-6 text-ink-muted">
-            A magazine of boots, perfume, and brushes. Written slowly, for aicomparor.shop.
+            Shopping guides for women in the US.
           </p>
         </div>
         <div>

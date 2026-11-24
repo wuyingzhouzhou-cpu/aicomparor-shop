@@ -1,4 +1,4 @@
-import {feedIndex} from "@/lib/project-feed";
+import {feedIndex, liveProducts, managedArticle} from "@/lib/project-feed";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -60,8 +60,26 @@ async function CategoryContent({
   }
 
   const legacy=getSummariesByCategory(category);
-  const rows=(await feedIndex()).filter(r=>r.kind==="article" && r.path.startsWith("/"+category+"/"));
-  const articles=rows.map(r=>{const slug=r.path.split("/")[2];const old=legacy.find(a=>a.slug===slug);return {...old,slug,category,title:r.title,description:r.description,updated:r.publishedAt.slice(0,10),readingMinutes:old?.readingMinutes??3,heroImage:old?.heroImage??""};});
+  const [entries, products] = await Promise.all([feedIndex(), liveProducts()]);
+  const rows = entries.filter(row => row.kind === "article" && row.path.startsWith("/" + category + "/"));
+  const articles = await Promise.all(rows.map(async row => {
+    const slug = row.path.split("/")[2];
+    const old = legacy.find(article => article.slug === slug);
+    let heroImage = old?.heroImage ?? "";
+    if (!heroImage && row.managed) {
+      const doc = await managedArticle(row.path);
+      for (const match of (doc?.body ?? "").matchAll(/\]\((?:https:\/\/(?:www\.)?aicomparor\.shop)?\/products\/([a-z0-9-]+)\)/g)) {
+        const product = products.find(item => item.slug === match[1]);
+        if (product?.image) {
+          heroImage = product.image;
+          break;
+        }
+      }
+    }
+    return { ...old, slug, category, title: row.title, description: row.description,
+      updated: row.publishedAt.slice(0, 10), readingMinutes: old?.readingMinutes ?? 3,
+      heroImage, productCover: !old?.heroImage && Boolean(heroImage) };
+  }));
   return (
     <CategoryListing
       department={departments[category]}

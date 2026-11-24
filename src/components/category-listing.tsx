@@ -49,18 +49,6 @@ function DeskNote({ category }: { category: Category }) {
     );
   }
 
-  if (category === "articles") {
-    return (
-      <p className="max-w-[var(--article-max)] text-pretty text-lg leading-relaxed text-ink">
-        The glossy-balm filter is{" "}
-        <Link href="/articles/best-dior-lip-glow-dupes" className={inlineLink}>
-          Dior Lip Glow dupes
-        </Link>
-        : balm versus oil, with a Korean balm for sheer natural color and daily hydration.
-      </p>
-    );
-  }
-
   return null;
 }
 

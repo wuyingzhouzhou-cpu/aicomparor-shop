@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { shopSections } from "@/lib/shop-sections";
+
 const links = [
-  { href: "/boots", label: "Boots" },
-  { href: "/perfume", label: "Perfume" },
-  { href: "/brushes", label: "Brushes" },
+  ...shopSections.map(({ slug, label }) => ({ href: "/shop/" + slug, label })),
   { href: "/guides", label: "Guides" },
   { href: "/articles", label: "Articles" },
   { href: "/about", label: "About" },
@@ -53,7 +53,7 @@ export function SiteNav() {
           />
         </Link>
 
-        <nav aria-label="Primary" className="hidden items-center md:flex">
+        <nav aria-label="Primary" className="hidden items-center lg:flex">
           {links.map((link) => {
             const current = isCurrent(pathname, link.href);
             return (
@@ -73,7 +73,7 @@ export function SiteNav() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -94,7 +94,7 @@ export function SiteNav() {
       </div>
 
       {open ? (
-        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-line md:hidden">
+        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-line lg:hidden">
           <ul className="content-wrap flex flex-col py-space-1">
             {links.map((link) => {
               const current = isCurrent(pathname, link.href);
