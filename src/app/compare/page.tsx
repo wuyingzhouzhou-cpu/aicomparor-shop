@@ -15,7 +15,7 @@ export default function ComparePage() {
         title="Coming in a later release"
         lede="Side-by-side comparison is not part of this edition. The essays are here. The table is not."
       />
-      <ButtonPrimary href="/#editors-picks">Read the editors’ picks</ButtonPrimary>
+      <ButtonPrimary href="/articles">Browse articles</ButtonPrimary>
     </div>
   );
 }
