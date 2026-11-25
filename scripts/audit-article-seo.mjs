@@ -1,3 +1,5 @@
+import { spawn } from "node:child_process";
+import { createInterface } from "node:readline";
 import { readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 
@@ -48,7 +50,29 @@ function tags(html, name) {
   );
 }
 
-const sitemap = await rendered("/sitemap.xml", ".body");
+// The sitemap runs on request so CMS publications can appear without a rebuild.
+async function buildSitemap() {
+  const server = spawn(process.execPath, ["node_modules/next/dist/bin/next", "start", "-H", "127.0.0.1", "-p", "0"], {
+    stdio: ["ignore", "pipe", "inherit"],
+  });
+  const timeout = setTimeout(() => server.kill(), 30000);
+  try {
+    const lines = createInterface({ input: server.stdout });
+    for await (const line of lines) {
+      const url = line.match(/http:\/\/127\.0\.0\.1:\d+/)?.[0];
+      if (!url) continue;
+      const response = await fetch(url + "/sitemap.xml", { signal: AbortSignal.timeout(15000) });
+      if (!response.ok) throw new Error(`Sitemap HTTP ${response.status}`);
+      return await response.text();
+    }
+    throw new Error("Could not start Next.js for the sitemap audit");
+  } finally {
+    clearTimeout(timeout);
+    server.kill();
+  }
+}
+
+const sitemap = await (live ? rendered("/sitemap.xml") : buildSitemap());
 const usedTitles = new Map();
 const usedDescriptions = new Map();
 let errors = 0;
